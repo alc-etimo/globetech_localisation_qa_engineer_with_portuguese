@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ariane Lesnyak · Localisation QA Engineer | Tester</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+/* ============================================================
+   GLOBETECH CSS - fully replicated from fcong.css
+   with portfolio customizations for Ariane Lesnyak
+   ============================================================ */
+
+/* RESET - from fcong.css */
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-size: 100%;
+vertical-align: baseline;
+background: transparent;
+}									
+article, aside, figure, footer, header, hgroup, nav, section {display: block;}
+img,
+object,
+embed {max-width: 100%;}
+html {overflow-y: scroll;}
+ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, 
+blockquote:after, 
+q:before, 
+q:after {content: ''; content: none;}
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+del {text-decoration: line-through;}
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+table {border-collapse: collapse; border-spacing: 0;}
+th {font-weight: bold; vertical-align: bottom;}
+td {font-weight: normal; vertical-align: top;}
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+input, select {vertical-align: middle;}
+input[type="radio"] {vertical-align: middle;}
+input[type="checkbox"] {vertical-align: middle; }
+select, input, textarea {font: 99% sans-serif;}
+table {font-size: inherit; font: 100%;}
+a:hover, a:active {outline: none;}
+small {font-size: 85%;}
+strong, th {font-weight: bold;}
+td, td img {vertical-align: top;} 
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+.clickable,
+label, 
+input[type=button], 
+input[type=submit], 
+button {cursor: pointer;}
+button, input, select, textarea {margin: 0;}
+* { box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; text-size-adjust:100%; height:100%; }
+body { height:100%; background-color:#fff; font-family:'Lato',Helvetica,Arial,sans-serif; font-size:62.5%; font-weight:300; color:#8896a1; }
+img { width:100%; height:auto; box-sizing:content-box; -moz-box-sizing:content-box; }
+.mobile-break { display:none; }
+.wrapper { max-width:1340px; width:100%; margin:0 auto; padding:0 20px; position:relative; }
+.wrapper.narrow { max-width:1080px; }
+
+/* HEADER / NAVBAR - adapted for portfolio */
+.header { background:url('https://github.com/alc-etimo/emlds/blob/main/case%20studies/portfolio/images/header-bg.png?raw=true') center top no-repeat; position:absolute; width:100%; z-index:200; background-size:cover; }
+.header .logo { float:left; width:35%; max-width:389px; min-width:170px; padding:0; position:relative; z-index:10; }
+.main-menu { float:right; clear:right; margin-top:4.5%; }
+.main-menu ul.menu { font-size:1.8em; font-weight:300; line-height:1em; letter-spacing:0.05em; }
+.main-menu ul.menu > li { display:inline-block; white-space:nowrap; position:relative; margin-left:30px; }
+.main-menu ul.menu > li:first-of-type { margin-left:0; }
+.main-menu ul.menu > li > a { color:#fff; display:block; text-decoration:none; opacity:1; line-height:1.5em; transition:opacity 300ms; }
+.main-menu ul.menu > li > a:hover { opacity:0.7; }
+
+/* MAIN BANNER / HERO - from fcong.css */
+.main-banner { position:relative; width:100%; z-index:1; margin-bottom:-70px; }
+.home .main-banner { margin-bottom:-100px; }
+.main-banner .page-banner { height:480px; }
+.home .main-banner .page-banner { height:680px; }
+.main-banner .page-banner .bx-wrapper { position:absolute; width:100% !important; height:100% !important; top:0; left:0; }
+.main-banner .page-banner .slides .slide { position:absolute; width:100% !important; height:100% !important; top:0; left:0; background-position:center center; background-repeat:no-repeat; background-size:cover; }
+.main-banner .page-banner .slide .slide-text { position:absolute; width:auto; padding:15px 30px; color:#fff; background-color:rgba(162,188,201,0.8); transform:translate(-50%,-50%); top:50%; left:50%; text-align:center; z-index:2; }
+.main-banner .page-banner .slide .slide-text p { display:inline-block; font-size:3.2em; font-weight:300; font-style:italic; line-height:1.5em; margin-bottom:0; font-family:'Lato',sans-serif; color:#fff; }
+
+/* SERVICE WRAPPER - strip-services */
+.service-wrapper { background:url('https://github.com/alc-etimo/emlds/blob/main/case%20studies/portfolio/images/strip-services.png?raw=true') center center no-repeat; min-height:500px; padding-top:120px; position:relative; z-index:100; background-size:cover; }
+.service-wrapper .wrapper { max-width:1080px; }
+.service-wrapper .col { background-position:left top; background-repeat:no-repeat; padding:2px 0 0 70px; }
+.service-wrapper .col * { color:#fff; }
+.service-wrapper .col .h1 { margin:0 0 0.25em 3px; }
+.service-wrapper .col .h1 img { width:auto; float:left; margin-left:-70px; }
+
+/* INTRO / BEIGE SECTION */
+.intro { background-color:#eeeaea; position:relative; z-index:10; padding:100px 0; margin-bottom:-65px; }
+.home .intro { margin-bottom:0; margin-top:-80px; }
+.intro .wrapper { max-width:1080px; }
+.intro h1 { color:#2da8db; font-size:3.8em; }
+.intro p:last-of-type { margin-bottom:0; }
+
+/* TESTIMONIALS / CLIENTS */
+.testimonials-wrapper { position:relative; z-index:5; margin-bottom:-150px; }
+.testimonials-wrapper .top-strip { position:absolute; top:0; right:0; bottom:54px; left:0; background:url('https://github.com/alc-etimo/emlds/blob/main/case%20studies/portfolio/images/strip-grey-top.png?raw=true') center top no-repeat; z-index:101; background-size:cover; }
+.testimonial { padding-top:160px; padding-bottom:200px; }
+.testimonial .mask { position:absolute; top:0; right:0; bottom:0; left:0; background-color:rgba(8,155,213,0.4); z-index:51; }
+.testimonial .wrapper { z-index:52; }
+.testimonial .wrapper * { text-align:center; }
+.testimonial blockquote { display:block; padding:0 15%; position:relative; }
+.testimonial blockquote p { font-size:3em; color:#fff; font-weight:700; margin-bottom:20px; }
+.testimonial p.name { color:#c4e3f3; font-size:2em; letter-spacing:0.05em; text-transform:uppercase; font-weight:400; margin-bottom:0; }
+
+/* SOCIAL WRAPPER */
+.social-wrapper { background:url('https://github.com/alc-etimo/emlds/blob/main/case%20studies/portfolio/images/strip-social.png?raw=true') center top no-repeat; height:300px; min-height:300px; position:relative; z-index:100; margin-bottom:-65px; background-size:cover; }
+.social-wrapper .wrapper { transform:translateY(-50%); top:55%; text-align:center; }
+.social-wrapper .h1 { display:inline; color:#fff; vertical-align:middle; font-size:3em; font-weight:300; }
+.social a { display:inline-block; text-align:center; width:60px; height:60px; margin-left:5%; border-radius:20px; background-color:#a9bac8; text-decoration:none; transition:background-color 300ms; position:relative; box-shadow:2px 2px 5px 0 rgba(0,0,0,0.4); }
+.social svg { color:#fff; font-size:3em; transition:color 300ms; position:relative; top:50%; transform:translateY(-50%); }
+.social a:hover { background-color:#30a8e6; }
+
+/* FOOTER */
+.footer-wrapper { background-color:#fff; margin-top:65px; }
+.footer { position:relative; padding-top:3%; padding-bottom:3%; margin-bottom:-65px; }
+.footer img.footer-logo { float:left; max-width:310px; margin-right:8%; }
+.footer ul.menu { float:left; font-size:1.6em; font-weight:400; margin-right:10%; }
+.footer ul.menu li { list-style-type:none; padding:0; margin:0 0 1em 0; }
+.footer ul.menu li a { color:#9cafbf; text-decoration:none; }
+.sub-footer { background:url('https://github.com/alc-etimo/emlds/blob/main/case%20studies/portfolio/images/strip-footer.png?raw=true') center top no-repeat; padding:3.5% 0 2%; clear:both; background-size:cover; }
+.sub-footer .content p { font-size:1.4em; color:#fff; font-weight:300; margin-bottom:0; text-align:center; }
+
+/* COLUMN LAYOUTS - from fcong.css */
+.col-3 > div.col { width:31.33%; margin:0 3% 3% 0; float:left; }
+.col-3 > div.col:nth-of-type(3n+3) { margin-right:0; }
+.clearfix:after { content:""; display: table; clear: both; }
+
+/* TYPOGRAPHY */
+h1, h2, h3, h4, h5, h6 { font-weight:300; line-height:1.125em; margin-bottom:0.5em; color:#37abd3; }
+h3 { font-size:2.6em; }
+h1, h2.h1, h3.h1, h4.h1 { font-size:4em; margin-bottom:1em; }
+h2, h3.h2, h4.h2 { font-size:3.2em; }
+.content p { font-size:1.8em; line-height:1.5em; margin:0 0 1.5em; }
+.content a { color:#2da8db; transition:color 300ms; }
+.content a:hover { color:#333; }
+
+/* BUTTONS */
+a.more-button { background-color:#37abd3; border:3px solid #37abd3; border-radius:2em; padding:1em 2em; color:#fff; font-size:1.4em; line-height:1em; text-decoration:none; letter-spacing:0.05em; display:inline-block; white-space:nowrap; text-transform:uppercase; transition:all 300ms; }
+a.more-button:hover { background-color:#b6cc20; border-color:#b6cc20; color:#fff; }
+
+/* UTILITIES */
+.text-center { text-align:center !important; }
+.white { color:#fff !important; }
+.green { color:#92c847 !important; }
+.clear { clear:both; padding:2% 0; }
+
+/* RESPONSIVE */
+@media only screen and (max-width: 768px) {
+  .main-banner .page-banner .slide .slide-text p { font-size:2.4em; }
+  .col-3 > div.col { width:100%; margin:0 auto 5%; float:none; }
+  .service-wrapper .col { padding:20px; text-align:center; }
+  .testimonial blockquote p { font-size:2em; }
+  .social-wrapper .h1 { display:block; margin-bottom:20px; font-size:2em; }
+}
+@media only screen and (max-width: 640px) {
+  .main-banner .page-banner .slide .slide-text { width:90%; padding:15px; }
+  .main-banner .page-banner .slide .slide-text p { font-size:1.8em; line-height:1.3em; }
+}
+@media only screen and (max-width: 470px) {
+  .main-banner .page-banner .slide .slide-text p { font-size:1.5em; }
+}
+
+/* ============================================================
+   ADDITIONAL CUSTOM STYLES FOR PORTFOLIO
+   ============================================================ */
+.strip-placeholder {
+  width: 100%;
+  height: 12px;
+  background-size: auto 12px;
+  background-repeat: repeat-x;
+}
+.strip-grey { background-image: url('https://github.com/alc-etimo/emlds/blob/main/case%20studies/portfolio/images/strip-grey-top.png?raw=true'); }
+.strip-services { background-image: url('https://github.com/alc-etimo/emlds/blob/main/case%20studies/portfolio/images/strip-services.png?raw=true'); }
+.strip-social { background-image: url('https://github.com/alc-etimo/emlds/blob/main/case%20studies/portfolio/images/strip-social.png?raw=true'); }
+.strip-footer { background-image: url('https://github.com/alc-etimo/emlds/blob/main/case%20studies/portfolio/images/strip-footer.png?raw=true'); height:20px; }
+
+/* Logo placeholder */
+.logo-placeholder-top {
+  position: fixed;
+  top: 12px;
+  left: 20px;
+  z-index: 1002;
+  font-size: 10px;
+  color: rgba(255,255,255,0.6);
+  background: rgba(0,0,0,0.3);
+  padding: 2px 8px;
+  border-radius: 4px;
+  pointer-events: none;
+  font-family: monospace;
+}
+
+/* Case study cards */
+.case-card {
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+.case-header {
+  background: #003C78;
+  padding: 25px 30px;
+  color: white;
+}
+.case-title { font-size: 2.2em; color: white; margin-bottom: 5px; }
+.case-client { font-size: 1.4em; opacity: 0.8; }
+.case-body { padding: 30px; }
+.ps-row { display: flex; gap: 30px; margin-bottom: 30px; flex-wrap: wrap; }
+.ps-box { flex: 1; padding: 20px; background: #f5f5f5; border-left: 4px solid; }
+.ps-problem { border-left-color: #e53e3e; }
+.ps-solution { border-left-color: #2E7D32; }
+.ps-box h4 { font-size: 1.4em; margin-bottom: 10px; }
+.ps-box p { font-size: 1.4em; line-height: 1.5; color: #555; }
+.metrics-wrap { background: #eef4fa; padding: 20px; margin-top: 20px; }
+.metric-row { margin-bottom: 15px; }
+.metric-head { display: flex; justify-content: space-between; font-size: 1.4em; font-weight: 600; color: #003C78; margin-bottom: 5px; }
+.bar-track { background: #ddd; height: 8px; border-radius: 4px; overflow: hidden; }
+.bar-fill { background: #37abd3; width: 0%; height: 100%; transition: width 1s ease; }
+
+/* Bug lifecycle */
+.bug-steps { display: flex; border-bottom: 2px solid #ddd; margin-bottom: 20px; flex-wrap: wrap; }
+.bug-step { flex: 1; padding: 15px; text-align: center; cursor: pointer; background: #f5f5f5; border-right: 1px solid #ddd; }
+.bug-step.active { background: #37abd3; color: white; }
+.bug-step .bs-label { font-size: 1.2em; font-weight: 600; }
+.bug-detail { padding: 20px; background: #fafafa; font-size: 1.4em; line-height: 1.5; }
+
+/* Matrix table */
+.matrix-wrap { overflow-x: auto; margin: 20px 0; }
+.matrix-table { width: 100%; border-collapse: collapse; font-size: 1.3em; }
+.matrix-table th, .matrix-table td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+.matrix-table th { background: #003C78; color: white; }
+.badge-pass { background: #c6f6d5; color: #276749; padding: 2px 8px; border-radius: 4px; }
+.badge-bug { background: #fed7d7; color: #c53030; padding: 2px 8px; border-radius: 4px; }
+
+/* Terminology vis */
+.term-vis { display: flex; align-items: center; gap: 30px; background: #eef4fa; padding: 30px; margin: 20px 0; flex-wrap: wrap; }
+.term-circle { border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-direction: column; font-weight: 800; color: white; }
+.tc-before { width: 100px; height: 100px; background: #8a9aaa; font-size: 2em; }
+.tc-after { width: 160px; height: 160px; background: #003C78; font-size: 3em; }
+.tc-label { font-size: 0.5em; margin-top: 5px; }
+
+/* Client slideshow */
+.client-show { position: relative; height: 180px; margin: 40px auto; max-width: 600px; }
+.client-slide { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; opacity: 0; transition: opacity 1s; }
+.client-slide.active { opacity: 1; }
+.client-logo-box { width: 200px; height: 70px; border: 2px dashed #ccc; display: flex; align-items: center; justify-content: center; background: #f5f5f5; margin-bottom: 10px; font-size: 1.2em; color: #999; }
+.client-name-lbl { font-size: 1.6em; font-weight: 700; color: #37abd3; }
+.fade-in { opacity: 0; transform: translateY(20px); transition: all 0.6s ease; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body>
+
+<!-- Logo placeholder -->
+<div class="logo-placeholder-top">🖼 logo-ariane-globetech (skewed rectangle)</div>
+
+<!-- Strip grey top -->
+<div class="strip-placeholder strip-grey"></div>
+
+<!-- HEADER / NAVBAR (GlobeTech style) -->
+<div class="header" style="background-image:url('https://github.com/alc-etimo/emlds/blob/main/case%20studies/portfolio/images/header-bg.png?raw=true'); background-size:cover; position:fixed; top:0; left:0; right:0; z-index:1000; height:auto; padding:15px 0;">
+  <div class="wrapper" style="max-width:1340px; margin:0 auto; padding:0 20px;">
+    <div class="logo" style="float:left; width:auto;">
+      <img src="https://github.com/alc-etimo/emlds/blob/main/case%20studies/portfolio/images/logo-ariane-globetech.png?raw=true" alt="Ariane Lesnyak" style="max-width:180px; height:auto;" onerror="this.style.display='none'; this.parentElement.innerHTML='<span style=&quot;color:white; font-size:1.8em; font-weight:300;&quot;>ARIANE LESNYAK<br><small>LQA Engineer</small></span>'">
+    </div>
+    <div class="main-menu">
+      <ul class="menu">
+        <li><a href="#intro">About</a></li>
+        <li><a href="#cases">Case Studies</a></li>
+        <li><a href="#clients">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN BANNER / HERO SLIDESHOW -->
+<div class="main-banner" style="margin-top:80px;">
+  <div class="page-banner" style="height:580px; position:relative; overflow:hidden;">
+    <div class="bx-wrapper" style="position:absolute; width:100%; height:100%; top:0; left:0;">
+      <div class="slides" id="heroSlides" style="position:relative; width:100%; height:100%;">
+        <div class="slide" data-caption="Do you need a QA engineer who finds bugs before your users do?" style="position:absolute; width:100%; height:100%; background:url('https://github.com/alc-etimo/emlds/blob/main/case%20studies/portfolio/images/hero-testing.jpg?raw=true') center center/cover no-repeat; opacity:1; transition:opacity 1s;"></div>
+        <div class="slide" data-caption="Bridging engineering and linguistics — across every language variant." style="position:absolute; width:100%; height:100%; background:url('https://github.com/alc-etimo/emlds/blob/main/case%20studies/portfolio/images/hero-multilingual.jpg?raw=true') center center/cover no-repeat; opacity:0; transition:opacity 1s;"></div>
+        <div class="slide" data-caption="Comfortable in multicultural environments. Ready for Cork." style="position:absolute; width:100%; height:100%; background:url('https://github.com/alc-etimo/emlds/blob/main/case%20studies/portfolio/images/hero-cork.jpg?raw=true') center center/cover no-repeat; opacity:0; transition:opacity 1s;"></div>
+        <div class="slide" data-caption="Ready to relocate. Housing arranged. EU citizenship final stage." style="position:absolute; width:100%; height:100%; background:url('https://github.com/alc-etimo/emlds/blob/main/case%20studies/portfolio/images/hero-relocation.jpg?raw=true') center center/cover no-repeat; opacity:0; transition:opacity 1s;"></div>
+        <div class="slide" data-caption="Delivering excellence through structured QA cycles and technical precision." style="position:absolute; width:100%; height:100%; background:url('https://github.com/alc-etimo/emlds/blob/main/case%20studies/portfolio/images/hero-qa.jpg?raw=true') center center/cover no-repeat; opacity:0; transition:opacity 1s;"></div>
+      </div>
+    </div>
+    <!-- Slide text overlay -->
+    <div class="slide-text" id="heroCaption" style="position:absolute; padding:15px 30px; color:#fff; background-color:rgba(162,188,201,0.8); transform:translate(-50%,-50%); top:50%; left:50%; text-align:center; z-index:2; max-width:80%;">
+      <p>Do you need a QA engineer who finds bugs before your users do?</p>
+    </div>
+  </div>
+</div>
+
+<!-- STRIP SERVICES -->
+<div class="strip-placeholder strip-services"></div>
+
+<!-- INTRO / ABOUT SECTION (Beige background) -->
+<div class="intro" id="intro" style="background-color:#eeeaea; padding:80px 0;">
+  <div class="wrapper narrow" style="max-width:1080px; margin:0 auto; padding:0 20px;">
+    <div class="col-3 clearfix">
+      <div class="col fade-in">
+        <div class="h1"><img src="https://github.com/alc-etimo/emlds/blob/main/case%20studies/portfolio/images/icon-about.png?raw=true" alt="" style="width:50px; float:left; margin-right:15px;"> <span style="font-size:2.2em;">About Me</span></div>
+        <p style="font-size:1.6em; line-height:1.5; color:#5a5a5a;">Native PT-BR linguist with an Associate Degree in IT. 10+ years in LQA for Apple, Adobe, Amazon. I find bugs before your users do.</p>
+      </div>
+      <div class="col fade-in">
+        <div class="h1"><img src="https://github.com/alc-etimo/emlds/blob/main/case%20studies/portfolio/images/icon-approach.png?raw=true" alt="" style="width:50px; float:left; margin-right:15px;"> <span style="font-size:2.2em;">My Approach</span></div>
+        <p style="font-size:1.6em; line-height:1.5; color:#5a5a5a;">Every defect filed with numbered reproduction steps, annotated screenshots, severity classification — adopted company-wide.</p>
+      </div>
+      <div class="col fade-in">
+        <div class="h1"><img src="https://github.com/alc-etimo/emlds/blob/main/case%20studies/portfolio/images/icon-offer.png?raw=true" alt="" style="width:50px; float:left; margin-right:15px;"> <span style="font-size:2.2em;">What I Offer</span></div>
+        <p style="font-size:1.6em; line-height:1.5; color:#5a5a5a;">Manual localisation testing across macOS, iOS, Android, print docs, hardware UI. Terminology management (2,700+ terms). QA dashboards.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CASE STUDIES SECTION -->
+<div class="wrapper" style="max-width:1080px; margin:60px auto; padding:0 20px;" id="cases">
+  <h2 class="text-center" style="font-size:3.2em; color:#003C78;">Case Studies</h2>
+  <p class="text-center" style="font-size:1.6em; margin-bottom:40px;">Four real-world cases mapping directly to GlobeTech's responsibilities</p>
+
+  <!-- CASE 1 -->
+  <div class="case-card fade-in">
+    <div class="case-header">
+      <div>
+        <div style="font-size:1.2em; opacity:0.8;">Case Study 01</div>
+        <div class="case-title">Systematic Bug Reporting on macOS & iOS Localisation</div>
+        <div class="case-client">Freelance · Apple, Adobe, Amazon vendors · 2015–Present</div>
+      </div>
+    </div>
+    <div class="case-body">
+      <div class="ps-row">
+        <div class="ps-box ps-problem"><h4>❗ Problem</h4><p>Engineering teams received vague, non-reproducible bug reports causing slow fix cycles.</p></div>
+        <div class="ps-box ps-solution"><h4>✅ Solution</h4><p>Structured methodology: OS version, device, reproduction steps, annotated screenshots, severity classification.</p></div>
+      </div>
+      <div class="metrics-wrap">
+        <div class="metric-row"><div class="metric-head"><span>Engineering Fix-Rate Improvement</span><span>65%</span></div><div class="bar-track"><div class="bar-fill" data-width="65"></div></div></div>
+        <div class="metric-row"><div class="metric-head"><span>Issue Resolution Cycle Reduction</span><span>40%</span></div><div class="bar-track"><div class="bar-fill" data-width="40"></div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CASE 2 -->
+  <div class="case-card fade-in">
+    <div class="case-header">
+      <div>
+        <div style="font-size:1.2em; opacity:0.8;">Case Study 02</div>
+        <div class="case-title">End-to-End QA Lifecycle · CRM & Chatbot Software</div>
+        <div class="case-client">TeamWorker / Claro Telecom · 30,000+ users</div>
+      </div>
+    </div>
+    <div class="case-body">
+      <div class="bug-steps" id="bugSteps">
+        <div class="bug-step active" data-step="0"><div class="bs-label">Test Plan</div></div>
+        <div class="bug-step" data-step="1"><div class="bs-label">Execution</div></div>
+        <div class="bug-step" data-step="2"><div class="bs-label">Bug Filing</div></div>
+        <div class="bug-step" data-step="3"><div class="bs-label">Engineering</div></div>
+        <div class="bug-step" data-step="4"><div class="bs-label">Regression</div></div>
+      </div>
+      <div class="bug-detail" id="bugDetail"><h4>Test Plan Design</h4><p>Designed manual test plans covering CRM content, chatbot scripts, and documentation. Defined test scope, entry/exit criteria, test cases by severity.</p></div>
+      <div class="metrics-wrap"><div class="metric-row"><div class="metric-head"><span>Rework Cycle Reduction</span><span>30%</span></div><div class="bar-track"><div class="bar-fill" data-width="30"></div></div></div></div>
+    </div>
+  </div>
+
+  <!-- CASE 3 -->
+  <div class="case-card fade-in">
+    <div class="case-header"><div><div style="font-size:1.2em; opacity:0.8;">Case Study 03</div><div class="case-title">Cross-Platform Localisation Testing</div><div class="case-client">macOS · iOS · Android · Print · Hardware UI</div></div></div>
+    <div class="case-body">
+      <div class="matrix-wrap">
+        <table class="matrix-table"><thead><tr><th>Test Area</th><th>macOS</th><th>iOS</th><th>Android</th><th>Issue Type</th></tr></thead>
+        <tbody><tr><td>UI String Length</td><td><span class="badge-bug">BUG</span></td><td><span class="badge-bug">BUG</span></td><td><span class="badge-pass">PASS</span></td><td>Functional</td></tr>
+        <tr><td>Cultural Adaptation</td><td><span class="badge-pass">PASS</span></td><td><span class="badge-bug">BUG</span></td><td><span class="badge-pass">PASS</span></td><td>Linguistic</td></tr>
+        <tr><td>Text Expansion (PT-BR +30%)</td><td><span class="badge-bug">BUG</span></td><td><span class="badge-bug">BUG</span></td><td><span class="badge-bug">BUG</span></td><td>Layout</td></tr>
+        </tbody></table>
+      </div>
+      <div class="metrics-wrap"><div class="metric-row"><div class="metric-head"><span>Formatting Inconsistency Reduction</span><span>60%</span></div><div class="bar-track"><div class="bar-fill" data-width="60"></div></div></div></div>
+    </div>
+  </div>
+
+  <!-- CASE 4 -->
+  <div class="case-card fade-in">
+    <div class="case-header"><div><div style="font-size:1.2em; opacity:0.8;">Case Study 04</div><div class="case-title">Terminology System · 700 → 2,700+ Terms</div><div class="case-client">TeamWorker / Claro Telecom · Linguistic QA Lead</div></div></div>
+    <div class="case-body">
+      <div class="term-vis">
+        <div><div class="term-circle tc-before">700<span class="tc-label">terms</span></div><div style="text-align:center; margin-top:10px;">Initial</div></div>
+        <div style="font-size:2em; color:#37abd3;">→</div>
+        <div><div class="term-circle tc-after">2,700+<span class="tc-label">terms</span></div><div style="text-align:center; margin-top:10px;">Validated</div></div>
+      </div>
+      <div class="metrics-wrap"><div class="metric-row"><div class="metric-head"><span>Terminology Inconsistency Reduction</span><span>60%</span></div><div class="bar-track"><div class="bar-fill" data-width="60"></div></div></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- CLIENTS / TESTIMONIALS SECTION (GlobeTech style) -->
+<div class="testimonials-wrapper" id="clients">
+  <div class="top-strip"></div>
+  <div class="testimonial" style="background:url('https://github.com/alc-etimo/emlds/blob/main/case%20studies/portfolio/images/client-bg.jpg?raw=true') center center/cover no-repeat; position:relative;">
+    <div class="mask"></div>
+    <div class="wrapper" style="position:relative; z-index:52;">
+      <h2 class="text-center white" style="font-size:3.2em; margin-bottom:30px;">Clients & Vendors</h2>
+      <div class="client-show" id="clientShow">
+        <div class="client-slide active"><div class="client-logo-box">📷 ACCLARO</div><div class="client-name-lbl">Acclaro</div><div class="client-role-lbl">Localisation QA Specialist</div></div>
+        <div class="client-slide"><div class="client-logo-box">📷 AMAZON</div><div class="client-name-lbl">Amazon</div><div class="client-role-lbl">Linguistic QA</div></div>
+        <div class="client-slide"><div class="client-logo-box">📷 ADOBE</div><div class="client-name-lbl">Adobe</div><div class="client-role-lbl">Manual Localisation Testing</div></div>
+        <div class="client-slide"><div class="client-logo-box">📷 CLARO / TW</div><div class="client-name-lbl">Claro Telecom</div><div class="client-role-lbl">Linguistic QA Lead</div></div>
+        <div class="client-slide"><div class="client-logo-box">📷 iYUNO / SDI</div><div class="client-name-lbl">iYUNO Media</div><div class="client-role-lbl">Subtitle QA · Streaming</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SOCIAL WRAPPER -->
+<div class="social-wrapper" id="contact">
+  <div class="wrapper">
+    <span class="h1">Connect with me</span>
+    <div class="social">
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fas fa-envelope"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER WRAPPER -->
+<div class="footer-wrapper">
+  <div class="footer">
+    <div class="wrapper clearfix">
+      <img src="https://github.com/alc-etimo/emlds/blob/main/case%20studies/portfolio/images/logo-ariane-footer.png?raw=true" class="footer-logo" alt="Ariane Lesnyak" onerror="this.style.display='none'">
+      <ul class="menu">
+        <li><a href="#intro">About Me</a></li>
+        <li><a href="#cases">Case Studies</a></li>
+        <li><a href="#clients">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="location">
+        <p>Ariane Lesnyak Castelló</p>
+        <span><i class="fas fa-map-marker-alt"></i> São Paulo, SP — Brazil</span>
+        <span><i class="fas fa-envelope"></i> ariane.etimo@gmail.com</span>
+        <span><i class="fas fa-phone"></i> +55 11 94388-2913</span>
+      </div>
+    </div>
+  </div>
+  <div class="sub-footer">
+    <div class="wrapper">
+      <div class="content">
+        <p>© 2026 Ariane Lesnyak Castelló · Designed for GlobeTech Localisation QA Engineer role · Inspired by globetech.eu</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- STRIP FOOTER -->
+<div class="strip-placeholder strip-footer"></div>
+
+<script>
+// Hero slideshow
+let currentSlide = 0;
+const slides = document.querySelectorAll('#heroSlides .slide');
+const heroCaption = document.querySelector('#heroCaption p');
+const captions = [
+  "Do you need a QA engineer who finds bugs before your users do?",
+  "Bridging engineering and linguistics — across every language variant.",
+  "Comfortable in multicultural environments. Ready for Cork.",
+  "Ready to relocate. Housing arranged. EU citizenship final stage.",
+  "Delivering excellence through structured QA cycles and technical precision."
+];
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.style.opacity = (i === index) ? '1' : '0';
+  });
+  if (heroCaption) heroCaption.innerText = captions[index];
+  currentSlide = index;
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+}
+
+setInterval(nextSlide, 5000);
+
+// Client slideshow
+let currentClient = 0;
+const clientSlides = document.querySelectorAll('.client-slide');
+function showClient(index) {
+  clientSlides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+  });
+  currentClient = index;
+}
+setInterval(() => {
+  currentClient = (currentClient + 1) % clientSlides.length;
+  showClient(currentClient);
+}, 4000);
+
+// Bug lifecycle
+const bugSteps = document.querySelectorAll('.bug-step');
+const bugDetail = document.querySelector('.bug-detail');
+const stepTexts = [
+  { title: 'Test Plan Design', text: 'Designed manual test plans covering CRM content, chatbot scripts, and documentation. Defined test scope, entry/exit criteria, test cases by severity.' },
+  { title: 'Test Execution', text: 'Executed test cases systematically across CRM modules and chatbot interfaces, verifying functional behaviour and linguistic accuracy.' },
+  { title: 'Bug Filing in Jira', text: 'Every defect filed with reproduction steps, environment details, annotated screenshots, severity classification, and suggested fix.' },
+  { title: 'Engineering Handoff', text: 'Worked directly with engineering teams to triage issues, clarify reproduction steps, and prioritise fixes.' },
+  { title: 'Regression Testing', text: 'Re-tested resolved issues and ran full regression passes — reducing rework cycles by 30%.' }
+];
+bugSteps.forEach((step, idx) => {
+  step.addEventListener('click', () => {
+    bugSteps.forEach(s => s.classList.remove('active'));
+    step.classList.add('active');
+    bugDetail.innerHTML = `<h4>${stepTexts[idx].title}</h4><p>${stepTexts[idx].text}</p>`;
+  });
+});
+
+// Animate bars on scroll + fade-in
+const barFills = document.querySelectorAll('.bar-fill');
+function animateBars() {
+  barFills.forEach(bar => {
+    if (!bar.dataset.animated && bar.getBoundingClientRect().top < window.innerHeight - 50) {
+      bar.style.width = bar.dataset.width + '%';
+      bar.dataset.animated = '1';
+    }
+  });
+}
+window.addEventListener('scroll', animateBars);
+window.addEventListener('load', animateBars);
+
+const fadeElements = document.querySelectorAll('.fade-in');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+fadeElements.forEach(el => observer.observe(el));
+
+// Sticky header effect
+window.addEventListener('scroll', () => {
+  const header = document.querySelector('.header');
+  if (window.scrollY > 100) header.style.backgroundColor = 'rgba(0,60,120,0.95)';
+  else header.style.backgroundColor = 'transparent';
+});
+</script>
+
+</body>
+</html>
