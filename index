@@ -69,7 +69,7 @@ img { width:100%; height:auto; box-sizing:content-box; -moz-box-sizing:content-b
 .wrapper.narrow { max-width:1080px; }
 
 /* HEADER / NAVBAR - adapted for portfolio */
-.header { background:url('https://github.com/alc-etimo/emlds/blob/main/case%20studies/portfolio/images/header-bg.png?raw=true') center top no-repeat; position:absolute; width:100%; z-index:200; background-size:cover; }
+.header { background:url('https://github.com/alc-etimo/globetech/blob/main/imgs/layout/header-bg.png?raw=true') center top no-repeat; position:absolute; width:100%; z-index:200; background-size:cover; }
 .header .logo { float:left; width:35%; max-width:389px; min-width:170px; padding:0; position:relative; z-index:10; }
 .main-menu { float:right; clear:right; margin-top:4.5%; }
 .main-menu ul.menu { font-size:1.8em; font-weight:300; line-height:1em; letter-spacing:0.05em; }
@@ -89,7 +89,7 @@ img { width:100%; height:auto; box-sizing:content-box; -moz-box-sizing:content-b
 .main-banner .page-banner .slide .slide-text p { display:inline-block; font-size:3.2em; font-weight:300; font-style:italic; line-height:1.5em; margin-bottom:0; font-family:'Lato',sans-serif; color:#fff; }
 
 /* SERVICE WRAPPER - strip-services */
-.service-wrapper { background:url('https://github.com/alc-etimo/emlds/blob/main/case%20studies/portfolio/images/strip-services.png?raw=true') center center no-repeat; min-height:500px; padding-top:120px; position:relative; z-index:100; background-size:cover; }
+.service-wrapper { background:url('https://github.com/alc-etimo/globetech/blob/main/imgs/layout/strip-services.png?raw=true') center center no-repeat; min-height:500px; padding-top:120px; position:relative; z-index:100; background-size:cover; }
 .service-wrapper .wrapper { max-width:1080px; }
 .service-wrapper .col { background-position:left top; background-repeat:no-repeat; padding:2px 0 0 70px; }
 .service-wrapper .col * { color:#fff; }
@@ -105,7 +105,7 @@ img { width:100%; height:auto; box-sizing:content-box; -moz-box-sizing:content-b
 
 /* TESTIMONIALS / CLIENTS */
 .testimonials-wrapper { position:relative; z-index:5; margin-bottom:-150px; }
-.testimonials-wrapper .top-strip { position:absolute; top:0; right:0; bottom:54px; left:0; background:url('https://github.com/alc-etimo/emlds/blob/main/case%20studies/portfolio/images/strip-grey-top.png?raw=true') center top no-repeat; z-index:101; background-size:cover; }
+.testimonials-wrapper .top-strip { position:absolute; top:0; right:0; bottom:54px; left:0; background:url('https://github.com/alc-etimo/globetech/blob/main/imgs/layout/strip-grey-top.png?raw=true') center top no-repeat; z-index:101; background-size:cover; }
 .testimonial { padding-top:160px; padding-bottom:200px; }
 .testimonial .mask { position:absolute; top:0; right:0; bottom:0; left:0; background-color:rgba(8,155,213,0.4); z-index:51; }
 .testimonial .wrapper { z-index:52; }
