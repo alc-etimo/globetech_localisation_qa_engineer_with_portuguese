@@ -3,553 +3,1234 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ariane Lesnyak · Localisation QA Engineer | Tester</title>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<title>Ariane Lesnyak · Localisation QA Engineer | Application for Cork, Ireland</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 /* ============================================================
-   GLOBETECH CSS - fully replicated from fcong.css
-   with portfolio customizations for Ariane Lesnyak
+   GLOBETECH CSS - ESTILO PRINCIPAL (OTIMIZADO)
    ============================================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-/* RESET - from fcong.css */
-html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
-margin: 0;
-padding: 0;
-border: 0;
-outline: 0;
-font-size: 100%;
-vertical-align: baseline;
-background: transparent;
-}									
-article, aside, figure, footer, header, hgroup, nav, section {display: block;}
-img,
-object,
-embed {max-width: 100%;}
-html {overflow-y: scroll;}
-ul {list-style: none;}
-blockquote, q {quotes: none;}
-blockquote:before, 
-blockquote:after, 
-q:before, 
-q:after {content: ''; content: none;}
-a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
-del {text-decoration: line-through;}
-abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
-table {border-collapse: collapse; border-spacing: 0;}
-th {font-weight: bold; vertical-align: bottom;}
-td {font-weight: normal; vertical-align: top;}
-hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
-input, select {vertical-align: middle;}
-input[type="radio"] {vertical-align: middle;}
-input[type="checkbox"] {vertical-align: middle; }
-select, input, textarea {font: 99% sans-serif;}
-table {font-size: inherit; font: 100%;}
-a:hover, a:active {outline: none;}
-small {font-size: 85%;}
-strong, th {font-weight: bold;}
-td, td img {vertical-align: top;} 
-sub, sup {font-size: 75%; line-height: 0; position: relative;}
-sup {top: -0.5em;}
-sub {bottom: -0.25em;}
-pre, code, kbd, samp {font-family: monospace, sans-serif;}
-.clickable,
-label, 
-input[type=button], 
-input[type=submit], 
-button {cursor: pointer;}
-button, input, select, textarea {margin: 0;}
-* { box-sizing:border-box; }
-html { -webkit-text-size-adjust:100%; text-size-adjust:100%; height:100%; }
-body { height:100%; background-color:#fff; font-family:'Lato',Helvetica,Arial,sans-serif; font-size:62.5%; font-weight:300; color:#8896a1; }
-img { width:100%; height:auto; box-sizing:content-box; -moz-box-sizing:content-box; }
-.mobile-break { display:none; }
-.wrapper { max-width:1340px; width:100%; margin:0 auto; padding:0 20px; position:relative; }
-.wrapper.narrow { max-width:1080px; }
-
-/* HEADER / NAVBAR - adapted for portfolio */
-.header { background:url('https://github.com/alc-etimo/globetech/blob/main/imgs/layout/header-bg.png?raw=true') center top no-repeat; position:absolute; width:100%; z-index:200; background-size:cover; }
-.header .logo { float:left; width:35%; max-width:389px; min-width:170px; padding:0; position:relative; z-index:10; }
-.main-menu { float:right; clear:right; margin-top:4.5%; }
-.main-menu ul.menu { font-size:1.8em; font-weight:300; line-height:1em; letter-spacing:0.05em; }
-.main-menu ul.menu > li { display:inline-block; white-space:nowrap; position:relative; margin-left:30px; }
-.main-menu ul.menu > li:first-of-type { margin-left:0; }
-.main-menu ul.menu > li > a { color:#fff; display:block; text-decoration:none; opacity:1; line-height:1.5em; transition:opacity 300ms; }
-.main-menu ul.menu > li > a:hover { opacity:0.7; }
-
-/* MAIN BANNER / HERO - from fcong.css */
-.main-banner { position:relative; width:100%; z-index:1; margin-bottom:-70px; }
-.home .main-banner { margin-bottom:-100px; }
-.main-banner .page-banner { height:480px; }
-.home .main-banner .page-banner { height:680px; }
-.main-banner .page-banner .bx-wrapper { position:absolute; width:100% !important; height:100% !important; top:0; left:0; }
-.main-banner .page-banner .slides .slide { position:absolute; width:100% !important; height:100% !important; top:0; left:0; background-position:center center; background-repeat:no-repeat; background-size:cover; }
-.main-banner .page-banner .slide .slide-text { position:absolute; width:auto; padding:15px 30px; color:#fff; background-color:rgba(162,188,201,0.8); transform:translate(-50%,-50%); top:50%; left:50%; text-align:center; z-index:2; }
-.main-banner .page-banner .slide .slide-text p { display:inline-block; font-size:3.2em; font-weight:300; font-style:italic; line-height:1.5em; margin-bottom:0; font-family:'Lato',sans-serif; color:#fff; }
-
-/* SERVICE WRAPPER - strip-services */
-.service-wrapper { background:url('https://github.com/alc-etimo/globetech/blob/main/imgs/layout/strip-services.png?raw=true') center center no-repeat; min-height:500px; padding-top:120px; position:relative; z-index:100; background-size:cover; }
-.service-wrapper .wrapper { max-width:1080px; }
-.service-wrapper .col { background-position:left top; background-repeat:no-repeat; padding:2px 0 0 70px; }
-.service-wrapper .col * { color:#fff; }
-.service-wrapper .col .h1 { margin:0 0 0.25em 3px; }
-.service-wrapper .col .h1 img { width:auto; float:left; margin-left:-70px; }
-
-/* INTRO / BEIGE SECTION */
-.intro { background-color:#eeeaea; position:relative; z-index:10; padding:100px 0; margin-bottom:-65px; }
-.home .intro { margin-bottom:0; margin-top:-80px; }
-.intro .wrapper { max-width:1080px; }
-.intro h1 { color:#2da8db; font-size:3.8em; }
-.intro p:last-of-type { margin-bottom:0; }
-
-/* TESTIMONIALS / CLIENTS */
-.testimonials-wrapper { position:relative; z-index:5; margin-bottom:-150px; }
-.testimonials-wrapper .top-strip { position:absolute; top:0; right:0; bottom:54px; left:0; background:url('https://github.com/alc-etimo/globetech/blob/main/imgs/layout/strip-grey-top.png?raw=true') center top no-repeat; z-index:101; background-size:cover; }
-.testimonial { padding-top:160px; padding-bottom:200px; }
-.testimonial .mask { position:absolute; top:0; right:0; bottom:0; left:0; background-color:rgba(8,155,213,0.4); z-index:51; }
-.testimonial .wrapper { z-index:52; }
-.testimonial .wrapper * { text-align:center; }
-.testimonial blockquote { display:block; padding:0 15%; position:relative; }
-.testimonial blockquote p { font-size:3em; color:#fff; font-weight:700; margin-bottom:20px; }
-.testimonial p.name { color:#c4e3f3; font-size:2em; letter-spacing:0.05em; text-transform:uppercase; font-weight:400; margin-bottom:0; }
-
-/* SOCIAL WRAPPER */
-.social-wrapper { background:url('https://github.com/alc-etimo/globetech/blob/main/imgs/layout/strip-social.png?raw=true') center top no-repeat; height:300px; min-height:300px; position:relative; z-index:100; margin-bottom:-65px; background-size:cover; }
-.social-wrapper .wrapper { transform:translateY(-50%); top:55%; text-align:center; }
-.social-wrapper .h1 { display:inline; color:#fff; vertical-align:middle; font-size:3em; font-weight:300; }
-.social a { display:inline-block; text-align:center; width:60px; height:60px; margin-left:5%; border-radius:20px; background-color:#a9bac8; text-decoration:none; transition:background-color 300ms; position:relative; box-shadow:2px 2px 5px 0 rgba(0,0,0,0.4); }
-.social svg { color:#fff; font-size:3em; transition:color 300ms; position:relative; top:50%; transform:translateY(-50%); }
-.social a:hover { background-color:#30a8e6; }
-
-/* FOOTER */
-.footer-wrapper { background-color:#fff; margin-top:65px; }
-.footer { position:relative; padding-top:3%; padding-bottom:3%; margin-bottom:-65px; }
-.footer img.footer-logo { float:left; max-width:310px; margin-right:8%; }
-.footer ul.menu { float:left; font-size:1.6em; font-weight:400; margin-right:10%; }
-.footer ul.menu li { list-style-type:none; padding:0; margin:0 0 1em 0; }
-.footer ul.menu li a { color:#9cafbf; text-decoration:none; }
-.sub-footer { background:url('https://github.com/alc-etimo/globetech/blob/main/imgs/layout/strip-footer.png?raw=true') center top no-repeat; padding:3.5% 0 2%; clear:both; background-size:cover; }
-.sub-footer .content p { font-size:1.4em; color:#fff; font-weight:300; margin-bottom:0; text-align:center; }
-
-/* COLUMN LAYOUTS - from fcong.css */
-.col-3 > div.col { width:31.33%; margin:0 3% 3% 0; float:left; }
-.col-3 > div.col:nth-of-type(3n+3) { margin-right:0; }
-.clearfix:after { content:""; display: table; clear: both; }
-
-/* TYPOGRAPHY */
-h1, h2, h3, h4, h5, h6 { font-weight:300; line-height:1.125em; margin-bottom:0.5em; color:#37abd3; }
-h3 { font-size:2.6em; }
-h1, h2.h1, h3.h1, h4.h1 { font-size:4em; margin-bottom:1em; }
-h2, h3.h2, h4.h2 { font-size:3.2em; }
-.content p { font-size:1.8em; line-height:1.5em; margin:0 0 1.5em; }
-.content a { color:#2da8db; transition:color 300ms; }
-.content a:hover { color:#333; }
-
-/* BUTTONS */
-a.more-button { background-color:#37abd3; border:3px solid #37abd3; border-radius:2em; padding:1em 2em; color:#fff; font-size:1.4em; line-height:1em; text-decoration:none; letter-spacing:0.05em; display:inline-block; white-space:nowrap; text-transform:uppercase; transition:all 300ms; }
-a.more-button:hover { background-color:#b6cc20; border-color:#b6cc20; color:#fff; }
-
-/* UTILITIES */
-.text-center { text-align:center !important; }
-.white { color:#fff !important; }
-.green { color:#92c847 !important; }
-.clear { clear:both; padding:2% 0; }
-
-/* RESPONSIVE */
-@media only screen and (max-width: 768px) {
-  .main-banner .page-banner .slide .slide-text p { font-size:2.4em; }
-  .col-3 > div.col { width:100%; margin:0 auto 5%; float:none; }
-  .service-wrapper .col { padding:20px; text-align:center; }
-  .testimonial blockquote p { font-size:2em; }
-  .social-wrapper .h1 { display:block; margin-bottom:20px; font-size:2em; }
-}
-@media only screen and (max-width: 640px) {
-  .main-banner .page-banner .slide .slide-text { width:90%; padding:15px; }
-  .main-banner .page-banner .slide .slide-text p { font-size:1.8em; line-height:1.3em; }
-}
-@media only screen and (max-width: 470px) {
-  .main-banner .page-banner .slide .slide-text p { font-size:1.5em; }
+:root {
+  --navy:      #003A6E;
+  --blue:      #0077C8;
+  --blue-lt:   #E8F1FA;
+  --blue-lit:  #2da4db;
+  --dark:      #0D1F35;
+  --green:     #00A86B;
+  --white:     #ffffff;
+  --off:       #F4F7FB;
+  --text:      #1a2b3c;
+  --muted:     #5a7082;
+  --rule:      #DDE6EF;
+  --beige:   #eeeaea;
+  --sans:      'Inter', system-ui, sans-serif;
+  --head:      'Montserrat', system-ui, sans-serif;
 }
 
-/* ============================================================
-   ADDITIONAL CUSTOM STYLES FOR PORTFOLIO
-   ============================================================ */
-.strip-placeholder {
+html { scroll-behavior: smooth; }
+
+body {
+  height: 100%;
+  background-color: #fff;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+  font-weight: 300;
+  color: #5a7082;
+  line-height: 1.6;
+}
+
+html { overflow-y: scroll; }
+
+/* --- HEADER --- */
+@media only screen and (max-width: 980px) { .header { background-size: 170%; } }
+.header {
+  background: url('https://github.com/alc-etimo/globetech/blob/main/imgs/layout/header-bg.png?raw=true') center top no-repeat;
+  position: absolute;
   width: 100%;
-  height: 12px;
-  background-size: auto 12px;
-  background-repeat: repeat-x;
+  z-index: 200;
 }
-.strip-grey { background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/layout/strip-grey-top.png?raw=true'); }
-.strip-services { background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/layout/strip-services.png?raw=true'); }
-.strip-social { background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/layout/strip-social.png?raw=true'); }
-.strip-footer { background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/layout/strip-footer.png?raw=true'); height:20px; }
-
-/* Logo placeholder */
-.logo-placeholder-top {
-  position: fixed;
-  top: 12px;
-  left: 20px;
-  z-index: 1002;
-  font-size: 10px;
-  color: rgba(255,255,255,0.6);
-  background: rgba(0,0,0,0.3);
-  padding: 2px 8px;
-  border-radius: 4px;
-  pointer-events: none;
-  font-family: monospace;
+@media only screen and (max-width: 840px) { .wrapper { padding-right: 10px; padding-left: 10px; } }
+.wrapper {
+  max-width: 1340px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
 }
+.wrapper.narrow { max-width: 1080px; }
+.clearfix:after { content: ""; display: table; clear: both; }
 
-/* Case study cards */
-.case-card {
-  background: #fff;
-  border: 1px solid #e4e4e4;
-  margin-bottom: 40px;
+.header.hide-nav { transform: translateY(-100%); }
+.header .logo {
+  float: left;
+  margin-left: 10px;
+  width: 35%;
+  max-width: 389px;
+  min-width: 170px;
+  position: relative;
+  z-index: 10;
+}
+.header .logo img { width: 100%; height: auto; }
+.main-menu {
+  float: right;
+  margin-top: 1.5%;
+  padding: 30px 20px;
+}
+.main-menu ul.menu {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  letter-spacing: 0;
+  list-style: none;
+
+}
+.main-menu ul.menu > li {
+  display: inline-block;
+  white-space: nowrap;
+  margin-left: 45px;
+
+}
+.main-menu ul.menu > li:first-child { margin-left: 0; }
+.main-menu ul.menu > li > a {
+  color: #fff;
+  text-decoration: none;
+  transition: opacity 300ms;
+}
+.main-menu ul.menu > li > a:hover { opacity: 0.7; }
+
+/* --- HERO (adaptado para a vaga) --- */
+.main-banner {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  margin-bottom: -53px;
+}
+.page-banner {
+  height: 635px;
+  position: relative;
   overflow: hidden;
 }
-.case-header {
-  background: #003C78;
-  padding: 25px 30px;
-  color: white;
+.slides {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
-.case-title { font-size: 2.2em; color: white; margin-bottom: 5px; }
-.case-client { font-size: 1.4em; opacity: 0.8; }
-.case-body { padding: 30px; }
-.ps-row { display: flex; gap: 30px; margin-bottom: 30px; flex-wrap: wrap; }
-.ps-box { flex: 1; padding: 20px; background: #f5f5f5; border-left: 4px solid; }
-.ps-problem { border-left-color: #e53e3e; }
-.ps-solution { border-left-color: #2E7D32; }
-.ps-box h4 { font-size: 1.4em; margin-bottom: 10px; }
-.ps-box p { font-size: 1.4em; line-height: 1.5; color: #555; }
-.metrics-wrap { background: #eef4fa; padding: 20px; margin-top: 20px; }
-.metric-row { margin-bottom: 15px; }
-.metric-head { display: flex; justify-content: space-between; font-size: 1.4em; font-weight: 600; color: #003C78; margin-bottom: 5px; }
-.bar-track { background: #ddd; height: 8px; border-radius: 4px; overflow: hidden; }
-.bar-fill { background: #37abd3; width: 0%; height: 100%; transition: width 1s ease; }
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+.slide.active { opacity: 1; z-index: 2; }
+.slide-text {
+  position: absolute;
+  width: fit-content;
+  max-width: 90%;
+  padding: 28px 48px;
+  color: #fff;
+  background-color: rgba(162, 188, 201, 0.85);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  z-index: 10;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+.slide-text p {
+  font-size: 32px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 48px;
+  margin: 0;
+  color: #ffffff;
+}
 
-/* Bug lifecycle */
-.bug-steps { display: flex; border-bottom: 2px solid #ddd; margin-bottom: 20px; flex-wrap: wrap; }
-.bug-step { flex: 1; padding: 15px; text-align: center; cursor: pointer; background: #f5f5f5; border-right: 1px solid #ddd; }
-.bug-step.active { background: #37abd3; color: white; }
-.bug-step .bs-label { font-size: 1.2em; font-weight: 600; }
-.bug-detail { padding: 20px; background: #fafafa; font-size: 1.4em; line-height: 1.5; }
+/* --- SERVICE WRAPPER (About / Approach / Offer) - palavras-chave adicionadas --- */
+.service-wrapper {
+  background: url('https://github.com/alc-etimo/globetech/blob/main/imgs/layout/strip-services.png?raw=true') center center no-repeat;
+  background-size: cover;
+  padding: 80px 0 100px;
+  position: relative;
+  z-index: 100;
+}
+.col-3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+  justify-content: center;
+}
+.col-3 > div.col {
+  width: 30%;
+  background: transparent;
+  padding: 20px 15px;
+  text-align: left;
+}
+.service-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+.service-icon i { width: 52px; height: 52px; font-size: 48px; color: #ffffff; }
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.service-wrapper .col h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 45px;
+  color: #ffffff;
+  margin: 0;
+}
+.service-wrapper .col p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 27px;
+  color: #ffffff;
+  text-align: left;
+}
 
-/* Matrix table */
-.matrix-wrap { overflow-x: auto; margin: 20px 0; }
-.matrix-table { width: 100%; border-collapse: collapse; font-size: 1.3em; }
-.matrix-table th, .matrix-table td { border: 1px solid #ddd; padding: 10px; text-align: left; }
-.matrix-table th { background: #003C78; color: white; }
-.badge-pass { background: #c6f6d5; color: #276749; padding: 2px 8px; border-radius: 4px; }
-.badge-bug { background: #fed7d7; color: #c53030; padding: 2px 8px; border-radius: 4px; }
+/* --- BARRA DE RELOCAÇÃO --- */
+.relo-bar.show { transform: translateY(0); }
+.relo-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 900;
+  background: var(--blue-lit);
+  padding: 10px 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: white;
+  transform: translateY(100%);
+  transition: transform 0.6s cubic-bezier(0.22, 0.97, 0.36, 1);
+}
+.relo-bar button {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
 
-/* Terminology vis */
-.term-vis { display: flex; align-items: center; gap: 30px; background: #eef4fa; padding: 30px; margin: 20px 0; flex-wrap: wrap; }
-.term-circle { border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-direction: column; font-weight: 800; color: white; }
-.tc-before { width: 100px; height: 100px; background: #8a9aaa; font-size: 2em; }
-.tc-after { width: 160px; height: 160px; background: #003C78; font-size: 3em; }
-.tc-label { font-size: 0.5em; margin-top: 5px; }
+/* --- SEÇÕES GERAIS --- */
+.section { background: var(--beige); padding-bottom: 50px;
+    margin-top: -70px; }
+.section-alt { background: var(--off); }
+.section-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 50px 2rem;
 
-/* Client slideshow */
-.client-show { position: relative; height: 180px; margin: 40px auto; max-width: 600px; }
-.client-slide { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; opacity: 0; transition: opacity 1s; }
-.client-slide.active { opacity: 1; }
-.client-logo-box { width: 200px; height: 70px; border: 2px dashed #ccc; display: flex; align-items: center; justify-content: center; background: #f5f5f5; margin-bottom: 10px; font-size: 1.2em; color: #999; }
-.client-name-lbl { font-size: 1.6em; font-weight: 700; color: #37abd3; }
-.fade-in { opacity: 0; transform: translateY(20px); transition: all 0.6s ease; }
-.fade-in.visible { opacity: 1; transform: translateY(0); }
+}
+
+.section-header { margin-bottom: 56px; }
+
+.section-label {
+  text-align: left;
+  font-weight: 300;
+  color: #2da8db;
+  margin-top:5px; 
+    line-height: 1.5em;
+    margin: 0 0 1.5em;
+    font-size: 3.8em;
+}
+  
+.section p {
+font-size: 1.8em;
+    line-height: 1.5em;
+    margin: 0 0 1.5em;
+}
+
+
+
+
+/* --- WHO I AM --- */
+
+.about-intro p {
+  
+  font-family: 'Lato Light', sans-serif;
+  color: #8895a1;  
+  text-align: left;
+       font-size: 1.8em;
+    line-height: 1.5em;
+    margin: 0 0 1.5em;
+}    
+
+       
+
+.about-intro p strong { color: #003C78; font-weight: 500; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- CASE STUDIES (Cards mantidos, sem animação) --- */
+.case-card {
+  background: var(--white);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  margin-bottom: 56px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+transition: box-shadow 0.3s;
+}
+
+.case-card:hover { box-shadow: 0 12px 40px rgba(0,58,110,0.1); }
+
+.case-header {
+  background: var(--navy);
+  padding: 28px 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+.case-num {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #5bc8ff;
+  margin-bottom: 6px;
+}
+.case-title {
+  font-family: var(--head);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.3;
+}
+.case-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+.case-tag {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.7);
+  border: 1px solid rgba(255,255,255,0.25);
+  padding: 2px 10px;
+  border-radius: 2px;
+}
+.case-badge {
+  background: var(--green);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 2px;
+  white-space: nowrap;
+  align-self: flex-start;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.case-body { padding: 36px; }
+
+/* Problem / Solution row */
+.ps-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+.ps-box { padding: 22px; border-radius: 2px; }
+.ps-problem { background: #FFF5F5; border-left: 4px solid #e53e3e; }
+.ps-solution { background: #F0FFF4; border-left: 4px solid var(--green); }
+.ps-box h4 {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.ps-problem h4 { color: #c53030; }
+.ps-solution h4 { color: #276749; }
+.ps-box p { font-size: 0.875rem; color: var(--text); line-height: 1.65; }
+.ba-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+/* Before / After */
+.ba-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 28px; }
+.ba-box {
+  padding: 20px 22px;
+  border-radius: 2px;
+  background: var(--off);
+  border-left: 4px solid var(--rule);
+transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.ba-box:hover { transform: scale(1.015); box-shadow: 0 6px 20px rgba(0,0,0,0.07); }
+.ba-before { border-left-color: #fc8181; }
+.ba-after { border-left-color: var(--green); }
+.ba-box strong {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--navy);
+}
+.ba-box ul { list-style: none; padding: 0; }
+.ba-box ul li { font-size: 0.84rem; color: var(--muted); margin-bottom: 4px; }
+
+/* Animated metric bars */
+.metrics-wrap {
+  background: var(--blue-lt);
+  border-radius: 2px;
+  padding: 26px 30px;
+}
+.metric-row { margin-bottom: 18px; }
+.metric-row:last-child { margin-bottom: 0; }
+.metric-head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 7px;
+}
+.bar-track {
+  background: rgba(0,58,110,0.1);
+  border-radius: 2px;
+  height: 10px;
+  overflow: hidden;
+}
+.bar-fill {
+  height: 100%;
+  width: 0%;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--navy), var(--blue));
+  transition: width 1.4s cubic-bezier(0.22, 0.97, 0.36, 1);
+}
+
+
+/* Matriz de teste */
+.matrix-wrap { overflow-x: auto; margin-bottom: 28px; }
+.matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+.matrix-table th {
+  background: var(--navy);
+  color: white;
+  padding: 10px 14px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+}
+.matrix-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: middle;
+}
+.matrix-table tr:hover td { background: var(--blue-lt); }
+.matrix-table tr:nth-child(even) td { background: var(--off); }
+.matrix-table tr:hover td { background: var(--blue-lt) !important; }
+
+.badge-pass { background: #C6F6D5; color: #276749; padding: 2px 8px; border-radius: 20px; font-weight: 600; font-size: 0.72rem; }
+.badge-bug  { background: #FED7D7; color: #c53030; padding: 2px 8px; border-radius: 20px; font-weight: 600; font-size: 0.72rem; }
+.badge-na   { background: var(--rule); color: var(--muted); padding: 2px 8px; border-radius: 20px; font-weight: 600; font-size: 0.72rem; }
+
+/* =========================================================
+   SKILLS SECTION
+   ========================================================= */
+.skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.skill-card {
+  background: var(--white); border: 1px solid var(--rule);
+  border-top: 3px solid var(--blue); padding: 24px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.skill-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,58,110,0.1); }
+.skill-card h3 { font-size: 0.85rem; font-weight: 700; color: var(--navy); margin-bottom: 14px; letter-spacing: 0.3px; }
+.skill-tags { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center;}
+.skill-tag {
+  font-size: 0.72rem; padding: 3px 10px;
+  background: var(--blue-lt); color: var(--navy);
+  border-radius: 2px; font-weight: 500;
+}
+
+/* --- RELOCATION --- */
+.relo-section {
+  background: var(--navy);
+  padding: 80px 0;
+  margin-top: 0;
+z-index: 5;
+    margin-bottom: -50px;
+}
+.relo-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.relo-left .section-label { color: #5bc8ff; }
+.relo-left .section-title { color: var(--white); }
+.relo-left p { color: rgba(255,255,255,0.75); font-size: 0.95rem; line-height: 1.75; margin-top: 16px; }
+.relo-checklist { list-style: none; }
+.relo-checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.88);
+  font-size: 0.9rem;
+}
+.relo-checklist li:last-child { border-bottom: none; }
+.relo-check { color: var(--blue-lit); font-size: 1rem; flex-shrink: 0; margin-top: 2px; }
+
+
+
+/* --- COLLABORATIONS (foco em tecnologia/software) --- */
+.clients-section {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  overflow: hidden;
+  background: transparent;
+  margin: 40px 0;
+}
+
+.clients-section .top-strip {
+position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 54px;
+    left: 0;
+    background: url(https://github.com/alc-etimo/globetech/blob/main/imgs/layout/strip-grey-top.png?raw=true') center top no-repeat;
+    z-index: 101;
+}
+
+.clients-bg-slides {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.clients-bg-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+.clients-bg-slide.active { opacity: 1; z-index: 1; }
+.clients-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 36, 80, 0.55);
+  z-index: 1;
+}
+.clients-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  max-width: 90%;
+  background-color: rgba(162, 188, 201, 0.9);
+  padding: 40px 60px;
+  text-align: center;
+  z-index: 2;
+  border-radius: 12px;
+}
+.client-logo-box {
+  width: 180px;
+  height: 80px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;;
+  border-radius: 12px;
+  padding: 10px;
+}
+.client-logo-box img { max-width: 140px; max-height: 60px; object-fit: contain; }
+.client-name-lbl {
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #003C78;
+  margin-bottom: 5px;
+}
+.client-role-lbl {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  font-style: italic;
+}
+.client-show { display: none; }
+
+/* --- SOCIAL WRAPPER --- */
+.social-wrapper {
+  background: url('https://github.com/alc-etimo/globetech/blob/main/imgs/layout/strip-social.png?raw=true') center top no-repeat;
+  background-size: cover;
+  min-height: 280px;
+  position: relative;
+  z-index: 100;
+  margin-top: -83px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-wrapper .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.social-wrapper .h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 45px;
+  letter-spacing: 0;
+  color: #fff;
+  margin: 0;
+  white-space: nowrap;
+}
+.social {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  background-color: #a9bac8;
+  text-decoration: none;
+  transition: background-color 300ms;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.4);
+  color: white;
+  font-size: 2rem;
+}
+.social a:hover { background-color: #30a8e6; }
+
+/* --- FOOTER --- */
+.footer-wrapper {
+  background-color: #fff;
+  border-top: 1px solid #eee;
+}
+.footer {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 30px 50px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.footer-logo-col { flex: 1; min-width: 180px; }
+.footer-logo-col img { max-width: 400px; height: auto; margin-top:10px;}
+.footer-links-col { flex: 2; display: flex; justify-content: center; }
+.footer-links-col ul { list-style: none; margin: 0; padding: 0; }
+.footer-links-col ul li { margin-bottom: 12px; }
+.footer-links-col ul li a {
+  text-decoration: none;
+  color: #9caf8f;
+  font-size: 16px;
+  font-famile: 'Lato Regular', sans-serif;
+  line-height: 24px;
+  transition: color 0.2s;
+}
+
+.footer-address-col { flex: 1; text-align: right; min-width: 220px; }
+.footer-address-col h5 { font-size: 1.2rem; color: #2da4db; margin-bottom: 10px; font-weight: 400; }
+.footer-address-col p { font-size: 0.9rem; color: #9cafbf; line-height: 1.6; margin-bottom: 8px; }
+.footer-address-col i { margin-right: 8px; color: #2da4db; }
+
+@media only screen and (max-width: 1380px) {
+    .sub-footer {
+        padding: 50px 0 50px;
+    }
+}
+.sub-footer {
+  background: url('https://github.com/alc-etimo/globetech/blob/main/imgs/layout/strip-footer.png?raw=true') center top no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    margin-bottom:30px;
+}
+
+
+@media (max-width: 900px) {
+  .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .ps-row, .ba-row, .relo-inner { grid-template-columns: 1fr; }
+  .col-3 > div.col { width: 100%; text-align: center; }
+  .title-wrapper { justify-content: center; }
+  .service-wrapper .col p { text-align: center; }
+  .clients-box { padding: 20px 30px; }
+  .client-logo-box { width: 140px; height: 60px; }
+  .client-name-lbl { font-size: 1.4rem; }
+  .client-role-lbl { font-size: 1rem; }
+  .footer { flex-direction: column; align-items: center; text-align: center; }
+  .footer-address-col { text-align: center; }
+}
+@media (max-width: 640px) {
+  .skills-grid { grid-template-columns: 1fr 1fr; }
+  .slide-text p, .clients-box { font-size: 22px; line-height: 34px; }
+}
 </style>
 </head>
 <body>
 
+<!-- BARRA DE RELOCAÇÃO -->
+<div class="relo-bar" id="reloBar">
+  <i class="fas fa-house"></i> Housing secured in Cork &nbsp;&nbsp;&nbsp;|
+  <i class="fas fa-passport"></i> EU Citizenship final stage &nbsp;&nbsp;&nbsp;|
+  <i class="fas fa-check-circle"></i> Ready to start immediately (onsite)
+  <button onclick="document.getElementById('reloBar').style.display='none'">×</button>
+</div>
 
-<!-- Strip grey top -->
-<div class="strip-placeholder strip-grey" style="background-image:url(' https://github.com/alc-etimo/globetech/blob/main/imgs/layout/strip-grey-top.png?raw=true');></div>
-  
-
-<!-- HEADER / NAVBAR (GlobeTech style) -->
-<div class="header" style="background-image:url(' https://github.com/alc-etimo/globetech/blob/main/imgs/layout/header-bg.png?raw=true'); background-size:cover; position:fixed; top:0; left:0; right:0; z-index:1000; height:auto; padding:15px 0;">
-  <div class="wrapper" style="max-width:1340px; margin:0 auto; padding:0 20px;">
-  <div class="logo" style="float:left; width:auto;">
-      <img src="https://github.com/alc-etimo/globetech/blob/main/imgs/logos/logo-ariane-globetech.png?raw=true" alt="Ariane Lesnyak" style="max-width:180px; height:auto;" onerror="this.style.display='none'; this.parentElement.innerHTML='<span style=&quot;color:white; font-size:1.8em; font-weight:300;&quot;>ARIANE LESNYAK<br><small>LQA Engineer</small></span>'">
-    </div>
+<!-- HEADER -->
+<div class="header" id="mainHeader">
+  <div class="wrapper">
+    <div class="logo"><img src="https://github.com/alc-etimo/globetech/blob/main/imgs/logos/logo-ariane-globetech.png?raw=true" alt="Ariane Lesnyak"></div>
     <div class="main-menu">
       <ul class="menu">
-        <li><a href="#intro">About</a></li>
-        <li><a href="#cases">Case Studies</a></li>
-        <li><a href="#clients">Experience</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#cases">Case studies</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#clients">Collaborations</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>
 </div>
 
-<!-- MAIN BANNER / HERO SLIDESHOW -->
-<div class="main-banner" style="margin-top:80px;">
-  <div class="page-banner" style="height:580px; position:relative; overflow:hidden;">
-    <div class="bx-wrapper" style="position:absolute; width:100%; height:100%; top:0; left:0;">
-      <div class="slides" id="heroSlides" style="position:relative; width:100%; height:100%;">
-        <div class="slide" data-caption="Do you need a QA engineer who finds bugs before your users do?" style="position:absolute; width:100%; height:100%; background:url('https://github.com/alc-etimo/globetech/blob/main/imgs/hero/gt-bg1.jpg?raw=true') center center/cover no-repeat; opacity:1; transition:opacity 1s;"></div>
-        <div class="slide" data-caption="Bridging engineering and linguistics — across every language variant." style="position:absolute; width:100%; height:100%; background:url('https://github.com/alc-etimo/globetech/blob/main/imgs/hero/gt-bg2.jpg?raw=true') center center/cover no-repeat; opacity:0; transition:opacity 1s;"></div>
-        <div class="slide" data-caption="Comfortable in multicultural environments. Ready for Cork." style="position:absolute; width:100%; height:100%; background:url('https://github.com/alc-etimo/globetech/blob/main/imgs/hero/gt-bg3.jpg?raw=true') center center/cover no-repeat; opacity:0; transition:opacity 1s;"></div>
-        <div class="slide" data-caption="Ready to relocate. Housing arranged. EU citizenship final stage." style="position:absolute; width:100%; height:100%; background:url('https://github.com/alc-etimo/globetech/blob/main/imgs/hero/gt-bg4.jpg?raw=true') center center/cover no-repeat; opacity:0; transition:opacity 1s;"></div>
-        <div class="slide" data-caption="Delivering excellence through structured QA cycles and technical precision." style="position:absolute; width:100%; height:100%; background:url('https://github.com/alc-etimo/globetech/blob/main/imgs/hero/gt-bg5.jpg?raw=true') center center/cover no-repeat; opacity:0; transition:opacity 1s;"></div>
-      </div>
+<!-- HERO -->
+<div class="main-banner">
+  <div class="page-banner">
+    <div class="slides" id="heroSlides">
+      <div class="slide active" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/hero/gt-bg18.jpg?raw=true');"></div>
+      <div class="slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/hero/gt-bg19.jpg?raw=true');"></div>
+      <div class="slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/hero/gt-bg14.jpg?raw=true');"></div>
+      <div class="slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/hero/gt-bg7.jpg?raw=true');"></div>
+<div class="slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/hero/gt-bg6.jpg?raw=true');"></div>
+<div class="slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/hero/gt-bg3.jpg?raw=true');"></div>
     </div>
-    <!-- Slide text overlay -->
-    <div class="slide-text" id="heroCaption" style="position:absolute; padding:15px 30px; color:#fff; background-color:rgba(162,188,201,0.8); transform:translate(-50%,-50%); top:50%; left:50%; text-align:center; z-index:2; max-width:80%;">
-      <p>Do you need a QA engineer who finds bugs before your users do?</p>
-    </div>
+    <div class="slide-text" id="heroCaption"><p>Breaking software to make it better  Engineering-ready bug reporting</p></div>
   </div>
 </div>
 
-<!-- STRIP SERVICES -->
-<div class="strip-placeholder strip-services"></div>
-
-<!-- INTRO / ABOUT SECTION (Beige background) -->
-<div class="intro" id="intro" style="background-color:#eeeaea; padding:80px 0;">
-  <div class="wrapper narrow" style="max-width:1080px; margin:0 auto; padding:0 20px;">
-    <div class="col-3 clearfix">
-      <div class="col fade-in">
-        <div class="h1"><img src="https://github.com/alc-etimo/emlds/blob/main/case%20studies/portfolio/images/icon-about.png?raw=true" alt="" style="width:50px; float:left; margin-right:15px;"> <span style="font-size:2.2em;">About Me</span></div>
-        <p style="font-size:1.6em; line-height:1.5; color:#5a5a5a;">Native PT-BR linguist with an Associate Degree in IT. 10+ years in LQA for Apple, Adobe, Amazon. I find bugs before your users do.</p>
+<!-- SERVICE WRAPPER (About / Approach / Offer) -->
+<div class="service-wrapper" id="about">
+  <div class="wrapper">
+    <div class="col-3">
+      <div class="col">
+        <div class="title-wrapper"><div class="service-icon"><i class="fa-regular fa-user"></i></div><h1>About me</h1></div>
+        <p>Brazilian Portuguese language professional with an Information Technology degree. 10+ years in LQA for consumer electronics for major companies. I don't just find bugs: I report them so engineers can fix them faster.</p>
       </div>
-      <div class="col fade-in">
-        <div class="h1"><img src="https://github.com/alc-etimo/emlds/blob/main/case%20studies/portfolio/images/icon-approach.png?raw=true" alt="" style="width:50px; float:left; margin-right:15px;"> <span style="font-size:2.2em;">My Approach</span></div>
-        <p style="font-size:1.6em; line-height:1.5; color:#5a5a5a;">Every defect filed with numbered reproduction steps, annotated screenshots, severity classification — adopted company-wide.</p>
+      <div class="col">
+        <div class="title-wrapper"><div class="service-icon"><i class="fa-regular fa-compass"></i></div><h1>My approach</h1></div>
+        <p>Every defect filed with numbered reproduction steps, annotated screenshots, severity classification, and suggested fixes. This methodology was adopted company-wide and accelerated fix cycles by 40%.</p>
       </div>
-      <div class="col fade-in">
-        <div class="h1"><img src="https://github.com/alc-etimo/emlds/blob/main/case%20studies/portfolio/images/icon-offer.png?raw=true" alt="" style="width:50px; float:left; margin-right:15px;"> <span style="font-size:2.2em;">What I Offer</span></div>
-        <p style="font-size:1.6em; line-height:1.5; color:#5a5a5a;">Manual localisation testing across macOS, iOS, Android, print docs, hardware UI. Terminology management (2,700+ terms). QA dashboards.</p>
+      <div class="col">
+        <div class="title-wrapper"><div class="service-icon"><i class="fa-regular fa-gem"></i></div><h1>What I offer</h1></div>
+        <p>Manual localisation testing across macOS, iOS, Android, Windows, and hardware UI. Functional testing in beta environments for software and apps. 100K+ strings fixed. Process optimization for AI training data. Ready for Cork.</p>
       </div>
     </div>
   </div>
 </div>
 
-<!-- CASE STUDIES SECTION -->
-<div class="wrapper" style="max-width:1080px; margin:60px auto; padding:0 20px;" id="cases">
-  <h2 class="text-center" style="font-size:3.2em; color:#003C78;">Case Studies</h2>
-  <p class="text-center" style="font-size:1.6em; margin-bottom:40px;">Four real-world cases mapping directly to GlobeTech's responsibilities</p>
+<!-- WHO I AM -->
+<section class="section" id="about-intro">
+  <div class="section-inner">
+    <div class="section-header text-left">
 
-  <!-- CASE 1 -->
-  <div class="case-card fade-in">
-    <div class="case-header">
-      <div>
-        <div style="font-size:1.2em; opacity:0.8;">Case Study 01</div>
-        <div class="case-title">Systematic Bug Reporting on macOS & iOS Localisation</div>
-        <div class="case-client">Freelance · Apple, Adobe, Amazon vendors · 2015–Present</div>
-      </div>
+      <div class="section-label" style="text-align:left;">Who I Am</div>          
     </div>
-    <div class="case-body">
-      <div class="ps-row">
-        <div class="ps-box ps-problem"><h4>❗ Problem</h4><p>Engineering teams received vague, non-reproducible bug reports causing slow fix cycles.</p></div>
-        <div class="ps-box ps-solution"><h4>✅ Solution</h4><p>Structured methodology: OS version, device, reproduction steps, annotated screenshots, severity classification.</p></div>
-      </div>
-      <div class="metrics-wrap">
-        <div class="metric-row"><div class="metric-head"><span>Engineering Fix-Rate Improvement</span><span>65%</span></div><div class="bar-track"><div class="bar-fill" data-width="65"></div></div></div>
-        <div class="metric-row"><div class="metric-head"><span>Issue Resolution Cycle Reduction</span><span>40%</span></div><div class="bar-track"><div class="bar-fill" data-width="40"></div></div></div>
-      </div>
+      <p>I'm a <strong>native Brazilian Portuguese linguist</strong> and Localisation QA Engineer with an IT background that lets me bridge the gap between engineering and linguistics. I've spent over a decade finding the bugs that slip through — text expansion on iOS, truncation on macOS, functional failures that only surface when a string is translated into Portuguese.</p>
+      <p>My approach is methodical: I document every issue with <strong>reproduction steps, screenshots, and screen recordings</strong>, categorised by severity and type. Engineering teams I've worked with adopted my reporting format company-wide because it accelerated fix cycles by <strong>40%.</strong></p>
+      <p>I've worked cross-functionally with <strong>international QA centres, documentation engineering teams, translators, and project managers</strong> — exactly the environment GlobeTech builds. I'm currently developing Python skills for test automation, building on my existing HTML/XML/JSON experience.</p>
     </div>
   </div>
+</section>
 
-  <!-- CASE 2 -->
-  <div class="case-card fade-in">
-    <div class="case-header">
-      <div>
-        <div style="font-size:1.2em; opacity:0.8;">Case Study 02</div>
-        <div class="case-title">End-to-End QA Lifecycle · CRM & Chatbot Software</div>
-        <div class="case-client">TeamWorker / Claro Telecom · 30,000+ users</div>
-      </div>
-    </div>
-    <div class="case-body">
-      <div class="bug-steps" id="bugSteps">
-        <div class="bug-step active" data-step="0"><div class="bs-label">Test Plan</div></div>
-        <div class="bug-step" data-step="1"><div class="bs-label">Execution</div></div>
-        <div class="bug-step" data-step="2"><div class="bs-label">Bug Filing</div></div>
-        <div class="bug-step" data-step="3"><div class="bs-label">Engineering</div></div>
-        <div class="bug-step" data-step="4"><div class="bs-label">Regression</div></div>
-      </div>
-      <div class="bug-detail" id="bugDetail"><h4>Test Plan Design</h4><p>Designed manual test plans covering CRM content, chatbot scripts, and documentation. Defined test scope, entry/exit criteria, test cases by severity.</p></div>
-      <div class="metrics-wrap"><div class="metric-row"><div class="metric-head"><span>Rework Cycle Reduction</span><span>30%</span></div><div class="bar-track"><div class="bar-fill" data-width="30"></div></div></div></div>
-    </div>
-  </div>
+<!-- ====================================================
+     CASE STUDIES 
+     var(--white)
+     ==================================================== -->
+<section class="section section-alt" id="cases">
+  <div class="section-inner" style=width:100%;">
+    <div class="section-header"><div class="section-label">Case Studies</div><div class="section-title" style="font-size: 2.8rem;
+    font-weight: 800;
+    color: #003A6E;
+    margin-bottom: 20px;"><strong>Localisation QA in practice</strong></div><p class="section-sub">Four real-world cases demonstrating systematic reporting, cross-platform testing, functional beta testing, and process innovation for AI training data, each directly aligned with the responsibilities in the <strong>GlobeTech Localisation QA Engineer role</strong>.</p></div>
 
-  <!-- CASE 3 -->
-  <div class="case-card fade-in">
-    <div class="case-header"><div><div style="font-size:1.2em; opacity:0.8;">Case Study 03</div><div class="case-title">Cross-Platform Localisation Testing</div><div class="case-client">macOS · iOS · Android · Print · Hardware UI</div></div></div>
-    <div class="case-body">
-      <div class="matrix-wrap">
-        <table class="matrix-table"><thead><tr><th>Test Area</th><th>macOS</th><th>iOS</th><th>Android</th><th>Issue Type</th></tr></thead>
-        <tbody><tr><td>UI String Length</td><td><span class="badge-bug">BUG</span></td><td><span class="badge-bug">BUG</span></td><td><span class="badge-pass">PASS</span></td><td>Functional</td></tr>
-        <tr><td>Cultural Adaptation</td><td><span class="badge-pass">PASS</span></td><td><span class="badge-bug">BUG</span></td><td><span class="badge-pass">PASS</span></td><td>Linguistic</td></tr>
-        <tr><td>Text Expansion (PT-BR +30%)</td><td><span class="badge-bug">BUG</span></td><td><span class="badge-bug">BUG</span></td><td><span class="badge-bug">BUG</span></td><td>Layout</td></tr>
-        </tbody></table>
-      </div>
-      <div class="metrics-wrap"><div class="metric-row"><div class="metric-head"><span>Formatting Inconsistency Reduction</span><span>60%</span></div><div class="bar-track"><div class="bar-fill" data-width="60"></div></div></div></div>
-    </div>
-  </div>
+    <!-- CASE 1: Systematic Bug Reporting -->
+    <div class="case-card">
+      <div class="case-header"><div><div class="case-num">Case Study 01</div><div class="case-title">Systematic Bug Reporting on macOS & iOS Localisation</div><small style="font-weight:400;font-size:0.9rem;color:rgba(255,255,255,0.7)">Global vendors protected under NDAs</small><div class="case-tags"><span class="case-tag">Manual Localisation Testing</span><span class="case-tag">Bug Tracking · Jira</span><span class="case-tag">macOS · iOS</span><span class="case-tag">Reproduction Steps</span></div></div><div class="case-badge">⭐ Core Match</div></div>
+      <div class="case-body"><div class="ps-row"><div class="ps-box ps-problem"><h4>❗ Key Challenge</h4><p>High-volume localisation projects for consumer electronics software (macOS, iOS, hardware UI) required systematic testing of Portuguese (BR) strings. Engineering teams were receiving vague bug reports that were difficult to reproduce, leading to slow fix cycles and re-test loops.</p></div><div class="ps-box ps-solution"><h4>✅ My Approach</h4><p>Developed a structured reporting methodology: every bug filed with OS version, device model, build number, numbered reproduction steps, and suggested fixes. </p></div></div><div class="ba-row"><div class="ba-box ba-before"><strong>⬅ Before</strong><ul><li>❌ Vague reports: "text is cut off"</li><li>❌ No reproduction steps or context</li><li>❌ Fix cycle: avg. 7 days per issue</li></ul></div><div class="ba-box ba-after"><strong>➡ After</strong><ul><li>✅ 150+ fully documented defects</li><li>✅ Numbered steps + annotated screenshots</li><li>✅ 65% fix-rate improvement</li></ul></div></div><div class="metrics-wrap">
 
-  <!-- CASE 4 -->
-  <div class="case-card fade-in">
-    <div class="case-header"><div><div style="font-size:1.2em; opacity:0.8;">Case Study 04</div><div class="case-title">Terminology System · 700 → 2,700+ Terms</div><div class="case-client">TeamWorker / Claro Telecom · Linguistic QA Lead</div></div></div>
-    <div class="case-body">
-      <div class="term-vis">
-        <div><div class="term-circle tc-before">700<span class="tc-label">terms</span></div><div style="text-align:center; margin-top:10px;">Initial</div></div>
-        <div style="font-size:2em; color:#37abd3;">→</div>
-        <div><div class="term-circle tc-after">2,700+<span class="tc-label">terms</span></div><div style="text-align:center; margin-top:10px;">Validated</div></div>
-      </div>
-      <div class="metrics-wrap"><div class="metric-row"><div class="metric-head"><span>Terminology Inconsistency Reduction</span><span>60%</span></div><div class="bar-track"><div class="bar-fill" data-width="60"></div></div></div></div>
+<div class="metric-row"><div class="metric-head"><span>Engineering Fix-Rate Improvement</span><span>65%</span></div><div class="bar-track"><div class="bar-fill" data-width="65"></div></div></div>
+
+<div class="metric-row"><div class="metric-head"><span>Issue Resolution Cycle Reduction</span><span>40%</span></div><div class="bar-track"><div class="bar-fill" data-width="40"></div></div></div>
+
+<div class="metric-row"><div class="metric-head"><span>UI String Accuracy Rate</span><span>90%</span></div><div class="bar-track"><div class="bar-fill" data-width="90"></div></div></div>
+</div></div>
     </div>
-  </div>
+
+    <!-- CASE 2: Cross-Platform Testing -->
+    <div class="case-card">
+      <div class="case-header"><div><div class="case-num">Case Study 02</div><div class="case-title">Cross-Platform Localisation Testing · macOS, iOS, UX/UI</div><small style="font-weight:400;font-size:0.9rem;color:rgba(255,255,255,0.7)">Software documentation & hardware UI</small>
+
+<div class="case-tags"><span class="case-tag">Text Expansion · Truncation</span><span class="case-tag">Funcional Bugs</span><span class="case-tag">Hardware UI</span><span class="case-tag">UI/UX Validation</span></span></div></div></div>
+
+
+      <div class="case-body"><div class="ps-row"><div class="ps-box ps-problem"><h4>❗ Key Challenge</h4><p>PT-BR expansion +30% causing layout failures across platforms.</p></div><div class="ps-box ps-solution"><h4>✅ My Approach</h4><p>Test cases per platform, regression passes, screenshots from devices.</p></div></div>
+
+<p style="margin-bottom:25px;font-size:0.87rem;color:var(--muted);">
+          Sample test coverage matrix from a multi-platform localisation cycle, showing the systematic approach applied across devices, content types, and issue categories:
+        </p>
+
+        <!-- Interactive Coverage Matrix -->
+        <div class="matrix-wrap">
+          <table class="matrix-table">
+            <thead>
+              <tr>
+                <th>Test Area</th>
+                <th>macOS</th>
+                <th>iOS</th>
+                <th>Android</th>
+                <th>Print / Docs</th>
+                <th>Hardware UI</th>
+                <th>Issue Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>UI String Length / Truncation</td>
+                <td><span class="badge-bug">BUG</span></td>
+                <td><span class="badge-bug">BUG</span></td>
+                <td><span class="badge-pass">PASS</span></td>
+                <td><span class="badge-na">N/A</span></td>
+                <td><span class="badge-bug">BUG</span></td>
+                <td>Functional + Linguistic</td>
+               </tr>
+              <tr>
+                <td>Text Expansion (PT-BR is ~30% longer)</td>
+                <td><span class="badge-bug">BUG</span></td>
+                <td><span class="badge-bug">BUG</span></td>
+                <td><span class="badge-bug">BUG</span></td>
+                <td><span class="badge-pass">PASS</span></td>
+                <td><span class="badge-na">N/A</span></td>
+                <td>Layout / Functional</td>
+               </tr>
+              <tr>
+                <td>Cultural Adaptation (date, currency)</td>
+                <td><span class="badge-pass">PASS</span></td>
+                <td><span class="badge-bug">BUG</span></td>
+                <td><span class="badge-pass">PASS</span></td>
+                <td><span class="badge-bug">BUG</span></td>
+                <td><span class="badge-na">N/A</span></td>
+                <td>Linguistic</td>
+               </tr>
+              <tr>
+                <td>Help Content Consistency</td>
+                <td><span class="badge-pass">PASS</span></td>
+                <td><span class="badge-pass">PASS</span></td>
+                <td><span class="badge-pass">PASS</span></td>
+                <td><span class="badge-bug">BUG</span></td>
+                <td><span class="badge-na">N/A</span></td>
+                <td>Linguistic</td>
+               </tr>
+              <tr>
+                <td>Special Characters / Encoding</td>
+                <td><span class="badge-pass">PASS</span></td>
+                <td><span class="badge-bug">BUG</span></td>
+                <td><span class="badge-pass">PASS</span></td>
+                <td><span class="badge-pass">PASS</span></td>
+                <td><span class="badge-pass">PASS</span></td>
+                <td>Functional</td>
+               </tr>
+              <tr>
+                <td>Hardware Label Alignment</td>
+                <td><span class="badge-na">N/A</span></td>
+                <td><span class="badge-na">N/A</span></td>
+                <td><span class="badge-na">N/A</span></td>
+                <td><span class="badge-na">N/A</span></td>
+                <td><span class="badge-bug">BUG</span></td>
+                <td>Functional + Layout</td>
+               </tr>
+              <tr>
+                <td>Terminology Consistency</td>
+                <td><span class="badge-pass">PASS</span></td>
+                <td><span class="badge-pass">PASS</span></td>
+                <td><span class="badge-pass">PASS</span></td>
+                <td><span class="badge-bug">BUG</span></td>
+                <td><span class="badge-pass">PASS</span></td>
+                <td>Linguistic</td>
+               </tr>
+            </tbody>
+          </table>
+        </div>
+
+  <div class="ba-row"><div class="ba-box ba-before"><strong>⬅ Before</strong><ul><li>❌ Truncated labels on macOS menus and buttons</li><li>❌ Hardware UI labels overlapping or misaligned</li><li>❌ No standardised test coverage across platforms</li></ul></div><div class="ba-box ba-after"><strong>➡ After</strong><ul><li>✅ 100% test coverage matrix for all platforms</li><li>✅ Text expansion validation for every bounded UI component</li><li>✅ Hardware label alignment verified on physical devices</li></ul></div></div>  
+
+
+        <div class="metrics-wrap">
+          <div class="metric-row">
+            <div class="metric-head"><span>Formatting & Linguistic Inconsistency Reduction</span><span>60%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="60"></div></div>
+          </div>
+          <div class="metric-row">
+            <div class="metric-head"><span>Issue Resolution Cycle Acceleration</span><span>40%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="40"></div></div>
+          </div>
+          <div class="metric-row">
+            <div class="metric-head"><span>Language Variants Tested</span><span>12+</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="80"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CASE 3: Functional Beta Testing for Software Family Suite -->
+    <div class="case-card">
+      <div class="case-header"><div><div class="case-num">Case Study 03</div><div class="case-title">Functional Beta Testing for a Software Family Suite</div><div class="case-tags"><span class="case-tag">Functional Testing</span><span class="case-tag">Beta Environment</span><span class="case-tag">Screenshots Annotation</span><span class="case-tag">Cloud-based platforms</span></div></div><div class="case-badge">Functional QA</div></div>
+
+<small style="font-weight:400;font-size:0.9rem;color:rgba(255,255,255,0.7)">Global client protected under NDAs</small>
+
+      <div class="case-body"><div class="ps-row"><div class="ps-box ps-problem"><h4>❗ Key Challenge</h4><p>A software family suite required validation of new features, frequently asked question pages, and updates in beta versions of programs for the Brazilian Portuguese market.</p></div><div class="ps-box ps-solution"><h4>✅ My Approach</h4><p>Executed systematic functional testing across beta builds. Each issue documented with annotated screenshots, reproduction steps, and actionable suggestions for engineering teams.</p></div></div>
+
+<div class="ba-row"><div class="ba-box ba-before"><strong>⬅ Before</strong><ul><li>❌ Issues found only after public release or late beta stages</li><li>❌ Broken and endlessly loading links</li><li>❌ Vague bug reports without reproduction steps</li></ul></div><div class="ba-box ba-after"><strong>➡ After</strong><ul><li>✅ Annotated screenshots with arrows, circles, and highlights</li><li>✅ 50+ issues identified pre-release across 3 beta builds</li><li>✅ Numbered reproduction steps for validation</li></ul></div></div>  
+
+<div class="metrics-wrap">
+<div class="metric-row">
+<div class="metric-head">
+<span>Issues Identified Pre-Release</span>
+<span>50</span>
 </div>
+<div class="bar-track">
+<div class="bar-fill" data-width="80"></div></div></div>
 
-<!-- CLIENTS / TESTIMONIALS SECTION (GlobeTech style) -->
-<div class="testimonials-wrapper" id="clients">
-  <div class="top-strip"></div>
-  <div class="testimonial" style="background:url('https://github.com/alc-etimo/globetech/blob/main/imgs/layout/client-bg.jpg?raw=true') center center/cover no-repeat; position:relative;">
-    <div class="mask"></div>
-    <div class="wrapper" style="position:relative; z-index:52;">
-      <h2 class="text-center white" style="font-size:3.2em; margin-bottom:30px;">Clients & Vendors</h2>
-      <div class="client-show" id="clientShow">
-        <div class="client-slide active"><div class="client-logo-box"><a href="https://github.com/alc-etimo/globetech/blob/main/imgs/logos/acclaro-logo.png?raw=true"/></div><div class="client-name-lbl">Acclaro</div><div class="client-role-lbl">Localisation QA Specialist</div></div>
-        <div class="client-slide"><div class="client-logo-box">📷 AMAZON</div><div class="client-name-lbl">Amazon</div><div class="client-role-lbl">Linguistic QA</div></div>
-        <div class="client-slide"><div class="client-logo-box"><a href="https://github.com/alc-etimo/globetech/blob/main/imgs/logos/vox.png?raw=true"/></div><div class="client-name-lbl">VOX MUNDI</div><div class="client-role-lbl">Manual Localisation Testing</div></div>
-        <div class="client-slide"><div class="client-logo-box"><a href="https://github.com/alc-etimo/globetech/blob/main/imgs/logos/claro-text-logo-png-701751694713050dkbnxfts7c.png?raw=true"/></div><div class="client-name-lbl">Claro Telecom</div><div class="client-role-lbl">Linguistic QA Lead</div></div>
-        <div class="client-slide"><div class="client-logo-box"><a href="https://github.com/alc-etimo/globetech/blob/main/imgs/logos/Iyuno-SDI-Group-Logo.png?raw=true"/></div><div class="client-name-lbl">iYUNO Media</div><div class="client-role-lbl">Subtitle QA · Streaming</div></div>
+<div class="metric-row">
+<div class="metric-head">
+<span>Fix Implementation Rate</span>
+<span>100%</span>
+</div>
+<div class="bar-track">
+<div class="bar-fill" data-width="100"></div></div></div>
+
+<div class="metric-row">
+<div class="metric-head">
+<span>Resolution Cycle Time Improvement</span>
+<span>-60%</span>
+</div>
+<div class="bar-track">
+<div class="bar-fill" data-width="90"></div></div></div>
+    </div></div></div>
+
+    <!-- CASE 4: Subtitle QA & Error Taxonomy -->
+    <div class="case-card">
+      <div class="case-header"><div><div class="case-num">Case Study 04</div><div class="case-title">Subtitle QA & Error Taxonomy for Streaming Platforms</div>
+
+<small style="font-weight:400;font-size:0.9rem;color:rgba(255,255,255,0.7)">Process optimization, data curation, and error taxonomy for LLMs training</small>
+
+<div class="case-tags"><span class="case-tag">Error Taxonomy</span><span class="case-tag">AI Training Data</span><span class="case-tag">Data Governace</span><span class="case-tag">Subtitle QA</span></div></div><div class="case-badge">Innovation</div></div>
+      <div class="case-body"><div class="ps-row"><div class="ps-box ps-problem"><h4>❗ Challenge</h4><p>The existing subtitle Quality Assurance process used a single "feedback" column on a spreadsheet, forcing engineers to guess error types and slowing down AI model retraining.</p></div><div class="ps-box ps-solution"><h4>✅ My Approach</h4><p>Redesigned the QA workflow with a structured error taxonomy, including: grammar, syntax, missing words, hallucinations, and in-cue, out-cue timing. Created standardized templates adopted company-wise.</p></div></div><div class="ba-row"><div class="ba-box ba-before"><strong>⬅ Before</strong><ul><li>❌ Single "feedback" column</li><li>❌ Engineers guessing error type and where they were</li><li>❌ Slow AI retraining</li></ul></div><div class="ba-box ba-after"><strong>➡ After</strong><ul><li>✅ 15+ structured categories created</li><li>✅ Severy erros suggested: minor, major, and critical</li><li>✅ Faster LLM model improvement</li></ul></div></div>
+
+
+
+<div class="metrics-wrap"><div class="metric-row"><div class="metric-head"><span>Engineering Time to Identify Issues</span><span>-70%</span></div><div class="bar-track"><div class="bar-fill" data-width="70"></div></div></div><div class="metric-row"><div class="metric-head"><span>Error Documentation Accuracy</span><span>+85%</span></div><div class="bar-track"><div class="bar-fill" data-width="85"></div></div></div><div class="metric-row"><div class="metric-head"><span>Natural Language Processing model improvement</span><span>+40%</span></div><div class="bar-track"><div class="bar-fill" data-width="40"></div></div></div></div></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ====================================================
+     SKILLS
+     ==================================================== -->
+<section class="section" id="skills">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label">Technical Competencies</div>
+      <div class="section-title" style="font-size: 2.8rem;
+    font-weight: 800;
+    color: #003A6E;
+    margin-bottom: 30px;"><strong>
+
+<div class="section-title">Skills directly aligned with the Localisation QA Engineer with Portuguese role at GlobeTech</strong></div></div>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card" >
+        <h3 style="text-align:center;"><i class="fas fa-search" style="color:#2da4db;"></i> QA & Testing</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Localisation Testing</span>
+          <span class="skill-tag">Test Plan Design</span>
+          <span class="skill-tag">Beta Environments</span>
+          <span class="skill-tag">LQA Taxonomy</span>
+          <span class="skill-tag">Regression Testing</span>
+          <span class="skill-tag">Error Classification</span>
+        </div>
+      </div>
+      <div class="skill-card" style="text-align:center;">
+        <h3><i class="fas fa-bug" style="color:#2da4db;"></i> Bug Tracking & Reporting</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Jira</span>
+          <span class="skill-tag">Trello</span>
+          <span class="skill-tag">Documentation</span>
+          <span class="skill-tag">Reproduction Steps</span>
+          <span class="skill-tag">Screenshots & Screen Recordings</span>
+          <span class="skill-tag">Severity Classification</span>
+        </div>
+      </div>
+      <div class="skill-card" style="text-align:center;">
+        <h3><i class="fas fa-laptop-code" style="color:#2da4db;"></i> Platforms & Technical</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">macOS</span>
+          <span class="skill-tag">iOS</span>
+          <span class="skill-tag">Software and apps UI/UX</span>
+          <span class="skill-tag">Windows</span>
+          <span class="skill-tag">HTML / CSS / JSON</span>
+          <span class="skill-tag">API Validation (in progress)</span>
+        </div>
+      </div>
+      <div class="skill-card" style="text-align:center;">
+        <h3><i class="fas fa-globe" style="color:#2da4db;"></i> Localisation & Linguistic</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Terminology Management</span>
+          <span class="skill-tag">Style Guides</span>
+          <span class="skill-tag">MTPE</span>
+          <span class="skill-tag">Cultural Adaptation</span>
+          <span class="skill-tag">CAT Tools</span>
+          <span class="skill-tag">Subtitling</span>
+        </div>
+      </div>
+      <div class="skill-card" style="text-align:center;">
+        <h3><i class="fas fa-robot" style="color:#2da4db;"></i> Automation & Technical Growth</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Python (in progress)</span>
+          <span class="skill-tag">Text Processing</span>
+          <span class="skill-tag">Postman (in progress)</span>
+          <span class="skill-tag">Database Management</span>
+          <span class="skill-tag">Selenium (in progress)</span>
+        </div>
+      </div>
+      <div class="skill-card" style="text-align:center;">
+        <h3><span style="color:#2da4db;">🗣</span> Languages</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Portuguese BR</span>
+          <span class="skill-tag">English — C2</span>
+          <span class="skill-tag">French — B2</span>
+          <span class="skill-tag">Spanish — B1</span>
+          <span class="skill-tag">LIBRAS (Brazilian Sign Language) — C1</span>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
+<!-- RELOCATION SECTION (destacado para a vaga presencial) -->
+<section class="relo-section" id="relocation">
+  <div class="relo-inner">
+    <div class="relo-left">
+      <div class="section-label" style="margin-bottom:10px;">Relocation Readiness</div>
+      <div class="section-title" style="font-size:16px; color:#ffffff; margin-bottom:30px;">Ready for Cork, starting now.</div>
+      <p>Accommodation already arranged in Ireland. EU citizenship in final stage. Available onsite.</p>
+    </div>
+    <ul class="relo-checklist">
+      <li><i class="fas fa-check-circle relo-check"></i><div><strong>Immediately available — can start within 2-3 weeks</strong></div></li>
+      <li><i class="fas fa-check-circle relo-check"></i><div><strong>Accommodation arranged</strong></div></li>
+      <li><i class="fas fa-check-circle relo-check"></i><div><strong>EU Citizenship in final stages</strong></div></li>
+          </ul>
+  </div>
+</section>
+
+<div class="top-strip"></div>
+
+<!-- COLLABORATIONS SECTION -->
+<section class="clients-section" id="clients">
+  <div class="clients-bg-slides" id="clientsBgSlides">
+
+    <div class="clients-bg-slide active" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/collabs/gt-cl1.jpg?raw=true');"></div>
+
+    <div class="clients-bg-slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/collabs/gt-cl11.jpg?raw=true');"></div>
+
+    <div class="clients-bg-slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/collabs/gt-cl14.jpg?raw=true');"></div>
+
+<div class="clients-bg-slide active" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/collabs/gt-cl4.jpg?raw=true');"></div>
+
+    <div class="clients-bg-slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/collabs/gt-cl3.jpg?raw=true');"></div>
+
+    <div class="clients-bg-slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/collabs/gt-cl13.jpg?raw=true');"></div>
+
+<div class="clients-bg-slide active" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/collabs/gt-cl7.jpg?raw=true');"></div>
+
+    <div class="clients-bg-slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/collabs/gt-cl5.jpg?raw=true');"></div>
+
+<div class="clients-bg-slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/collabs/gt-cl12.jpg?raw=true');"></div>
+
+<div class="clients-bg-slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/collabs/gt-cl2.jpg?raw=true');"></div>
+
+<div class="clients-bg-slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/collabs/gt-cl6.jpg?raw=true');"></div>
+
+
+  </div>
+  <div class="clients-overlay"></div>
+
+
+  <div class="clients-box" id="clientsBox">
+
+    <div class="client-logo-box">
+
+<img id="clientLogoImg" src="https://github.com/alc-etimo/globetech/blob/main/imgs/logos/acclaro-logo.png?raw=true" alt="Acclaro">
+</div>
+        <div class="client-role-lbl" id="clientRoleLabel">Functional Beta Testing · Process Otimization</div>
+
+</section>
 <!-- SOCIAL WRAPPER -->
 <div class="social-wrapper" id="contact">
   <div class="wrapper">
     <span class="h1">Connect with me</span>
     <div class="social">
-      <a href="#"><i class="fab fa-linkedin-in"></i></a>
-      <a href="#"><i class="fas fa-envelope"></i></a>
-      <a href="#"><i class="fab fa-github"></i></a>
-      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://linkedin.com/in/arianelesnyak" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:ariane.etimo@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/alc-etimo" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="tel:+5511943882913"><i class="fab fa-whatsapp"></i></a>
     </div>
   </div>
 </div>
 
-<!-- FOOTER WRAPPER -->
+<!-- FOOTER -->
 <div class="footer-wrapper">
   <div class="footer">
-    <div class="wrapper clearfix">
-      <img src="https://github.com/alc-etimo/globetech/blob/main/imgs/layout/logo-ariane-footer.png?raw=true" class="footer-logo" alt="Ariane Lesnyak" onerror="this.style.display='none'">
-      <ul class="menu">
-        <li><a href="#intro">About Me</a></li>
-        <li><a href="#cases">Case Studies</a></li>
-        <li><a href="#clients">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <div class="footer-logo-col">
+      <img src="https://github.com/alc-etimo/globetech/blob/main/imgs/logos/logo-ariane-globetech-footer.png?raw=true" alt="Ariane Lesnyak">
+    </div>
+    <div class="footer-links-col">
+      <ul>        
+        <li style="margin-left:50px;"><a href="#about-intro">Who I Am</a></li>
+        <li style="margin-left:50px;"><a href="#cases">Case Studies</a></li>
+        <li style="margin-left:50px;"><a href="#skills">Competencies</a></li>
+        <li style="margin-left:50px;"><a href="#clients">Collaborations</a></li>
       </ul>
-      <div class="location">
-        <p>Ariane Lesnyak Castelló</p>
-        <span><i class="fas fa-map-marker-alt"></i> São Paulo, SP — Brazil</span>
-        <span><i class="fas fa-envelope"></i> ariane.etimo@gmail.com</span>
-        <span><i class="fas fa-phone"></i> +55 11 94388-2913</span>
-      </div>
+    </div>
+    <div class="footer-address-col">
+      <h5>Étimo Edições</h5>
+      <p>59th Vicente Domingues Vaz St<br>Torre de Pedra, SP, Brazil</p>
+      <p><i class="fas fa-phone"></i> +55 (11) 9 43882913</p>
+      <p><i class="fas fa-envelope"></i> ariane.etimo@gmail.com</p>
+      <p><i class="fa-solid fa-plane-departure" style="color:#2da4db;"></i>Open to realocation</i>
     </div>
   </div>
-  <div class="sub-footer">
-    <div class="wrapper">
-      <div class="content">
-        <p>© 2026 Ariane Lesnyak Castelló · Designed for GlobeTech Localisation QA Engineer role · Inspired by globetech.eu</p>
-      </div>
-    </div>
-  </div>
+  <div class="sub-footer">© 2026 Ariane Lesnyak · Designed for the Localisation QA Engineer with Portuguese role at Cork · Inspired by GlobeTech.eu</div>
 </div>
 
-<!-- STRIP FOOTER -->
-<div class="strip-placeholder strip-footer"></div>
 
 <script>
+// Navbar scroll effect
+const navbar = document.getElementById('mainHeader');
+window.addEventListener('scroll', () => { if (window.scrollY > 80) navbar.classList.add('hide-nav'); else navbar.classList.remove('hide-nav'); });
+
+// Animate metric bars
+const bars = document.querySelectorAll('.bar-fill');
+const animateBars = () => { bars.forEach(bar => { const rect = bar.getBoundingClientRect(); if (rect.top < window.innerHeight - 30 && !bar.dataset.animated) { bar.style.width = bar.dataset.width + '%'; bar.dataset.animated = 'true'; } }); };
+window.addEventListener('scroll', animateBars); window.addEventListener('load', animateBars);
+
 // Hero slideshow
-let currentSlide = 0;
-const slides = document.querySelectorAll('#heroSlides .slide');
-const heroCaption = document.querySelector('#heroCaption p');
+let heroIdx = 0, heroTimer;
+const heroSlides = document.querySelectorAll('#heroSlides .slide');
 const captions = [
-  "Do you need a QA engineer who finds bugs before your users do?",
-  "Bridging engineering and linguistics — across every language variant.",
-  "Comfortable in multicultural environments. Ready for Cork.",
-  "Ready to relocate. Housing arranged. EU citizenship final stage.",
-  "Delivering excellence through structured QA cycles and technical precision."
+    "Finding bugs before users do · Turning issues into engineering-ready reports",
+    "Assuring quality across Portuguese variants in real-world scenarios",
+    "Testing localisation where language meets product behavior",
+    "Making sure every string work   Linguistics · Performance · Cultural",    
+    "Aligning language QA and engineering teams through clear communication",    
+    "Realocation-ready · Brazil → Ireland  EU citizenship final stage"
+];
+function showHeroSlide(index) { heroSlides.forEach((s, i) => s.classList.toggle('active', i === index)); const captionEl = document.querySelector('#heroCaption p'); if (captionEl && captions[index]) captionEl.innerText = captions[index]; heroIdx = index; }
+function nextHeroSlide() { showHeroSlide((heroIdx + 1) % heroSlides.length); }
+if (heroSlides.length) heroTimer = setInterval(nextHeroSlide, 5500);
+
+// Collaborations slideshow
+const clientData = [
+   { logo: "https://github.com/alc-etimo/globetech/blob/main/imgs/logos/acclaro-logo.png?raw=true", name: "Acclaro", role: "Functional Beta Testing · Process Optimization" },
+   { logo: "https://github.com/alc-etimo/globetech/blob/main/imgs/logos/tw-logo-att.png?raw=true", name: "TeamWorker", role: "Linguistic QA Lead · Taxonomy Management" },
+    { logo: "https://github.com/alc-etimo/globetech/blob/main/imgs/logos/saga_logo.webp?raw=true", name: "Saga Translation", role: "Localisation FR>EN · Cultural Adaptation" },    
+    { logo: "https://github.com/alc-etimo/globetech/blob/main/imgs/logos/VSI_Vox_Mundi_logo.png?raw=true", name: "VOX MUNDI", role: "Localisation QA · Streaming Platforms" },
+    { logo: "https://github.com/alc-etimo/globetech/blob/main/imgs/logos/mm-logo.png?raw=true", name: "Moshi Media", role: "MTPE QA · Streaming Platforms" },
+    { logo: "https://github.com/alc-etimo/globetech/blob/main/imgs/logos/claro-logo-att.png?raw=true", name: "Claro Telecom", role: "Language Specialist · Process Optimization" },
+    { logo: "https://github.com/alc-etimo/globetech/blob/main/imgs/logos/tabuleiro-filmes.png?raw=true", name: "Tabuleiro Filmes", role: "Scripts PT-BR>EN · International Film Festivals" },
+    { logo: "https://github.com/alc-etimo/globetech/blob/main/imgs/logos/ducere-logo.png?raw=true", name: "Ducere", role: "Editor · Educational Materials" },
+    { logo: "https://github.com/alc-etimo/globetech/blob/main/imgs/logos/itc-global-logoo.png?raw=true", name: "ITC Global", role: "Subtitling · Academic Lectures" },
+    { logo: "https://github.com/alc-etimo/globetech/blob/main/imgs/logos/Iyuno-SDI-Group-Logo.png?raw=true", name: "iYUNO", role: "Translation · Term Documentation" },
+    { logo: "https://github.com/alc-etimo/globetech/blob/main/imgs/logos/tropical-dystopia-logo.png?raw=true", name: "Tropical Dystopia", role: "Localisation ES>PT-BR · Financial Granted" }
 ];
 
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.style.opacity = (i === index) ? '1' : '0';
-  });
-  if (heroCaption) heroCaption.innerText = captions[index];
-  currentSlide = index;
-}
 
-function nextSlide() {
-  currentSlide = (currentSlide + 1) % slides.length;
-  showSlide(currentSlide);
-}
+const clientBgSlides = document.querySelectorAll('#clientsBgSlides .clients-bg-slide');
+const clientLogoImg = document.getElementById('clientLogoImg');
+const clientNameLabel = document.getElementById('clientNameLabel');
+const clientRoleLabel = document.getElementById('clientRoleLabel');
+let clientBgIdx = 0, clientBgTimer;
+function showClientSlide(index) { if (!clientBgSlides.length) return; clientBgSlides.forEach((s, i) => s.classList.toggle('active', i === index)); if (clientData[index]) { if (clientLogoImg) clientLogoImg.src = clientData[index].logo; if (clientNameLabel) clientNameLabel.innerText = clientData[index].name; if (clientRoleLabel) clientRoleLabel.innerText = clientData[index].role; } clientBgIdx = index; }
+function nextClientSlide() { if (clientBgSlides.length) showClientSlide((clientBgIdx + 1) % clientBgSlides.length); }
+if (clientBgSlides.length) clientBgTimer = setInterval(nextClientSlide, 5500);
 
-setInterval(nextSlide, 5000);
-
-// Client slideshow
-let currentClient = 0;
-const clientSlides = document.querySelectorAll('.client-slide');
-function showClient(index) {
-  clientSlides.forEach((slide, i) => {
-    slide.classList.toggle('active', i === index);
-  });
-  currentClient = index;
-}
-setInterval(() => {
-  currentClient = (currentClient + 1) % clientSlides.length;
-  showClient(currentClient);
-}, 4000);
-
-// Bug lifecycle
-const bugSteps = document.querySelectorAll('.bug-step');
-const bugDetail = document.querySelector('.bug-detail');
-const stepTexts = [
-  { title: 'Test Plan Design', text: 'Designed manual test plans covering CRM content, chatbot scripts, and documentation. Defined test scope, entry/exit criteria, test cases by severity.' },
-  { title: 'Test Execution', text: 'Executed test cases systematically across CRM modules and chatbot interfaces, verifying functional behaviour and linguistic accuracy.' },
-  { title: 'Bug Filing in Jira', text: 'Every defect filed with reproduction steps, environment details, annotated screenshots, severity classification, and suggested fix.' },
-  { title: 'Engineering Handoff', text: 'Worked directly with engineering teams to triage issues, clarify reproduction steps, and prioritise fixes.' },
-  { title: 'Regression Testing', text: 'Re-tested resolved issues and ran full regression passes — reducing rework cycles by 30%.' }
-];
-bugSteps.forEach((step, idx) => {
-  step.addEventListener('click', () => {
-    bugSteps.forEach(s => s.classList.remove('active'));
-    step.classList.add('active');
-    bugDetail.innerHTML = `<h4>${stepTexts[idx].title}</h4><p>${stepTexts[idx].text}</p>`;
-  });
-});
-
-// Animate bars on scroll + fade-in
-const barFills = document.querySelectorAll('.bar-fill');
-function animateBars() {
-  barFills.forEach(bar => {
-    if (!bar.dataset.animated && bar.getBoundingClientRect().top < window.innerHeight - 50) {
-      bar.style.width = bar.dataset.width + '%';
-      bar.dataset.animated = '1';
-    }
-  });
-}
-window.addEventListener('scroll', animateBars);
-window.addEventListener('load', animateBars);
-
-const fadeElements = document.querySelectorAll('.fade-in');
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-}, { threshold: 0.1 });
-fadeElements.forEach(el => observer.observe(el));
-
-// Sticky header effect
-window.addEventListener('scroll', () => {
-  const header = document.querySelector('.header');
-  if (window.scrollY > 100) header.style.backgroundColor = 'rgba(0,60,120,0.95)';
-  else header.style.backgroundColor = 'transparent';
-});
+// Relocation banner
+setTimeout(() => { const reloBar = document.getElementById('reloBar'); if (reloBar) reloBar.classList.add('show'); }, 2000);
 </script>
 
 </body>
