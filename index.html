@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ariane Lesnyak · Localisation QA Engineer | Application for Cork, Ireland</title>
+<title>Ariane Lesnyak · Localisation QA Engineer with Portuguese</title>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 /* ============================================================
-   GLOBETECH CSS - ESTILO PRINCIPAL (OTIMIZADO)
+   GLOBETECH-INSPIRED CSS
    ============================================================ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -154,7 +154,7 @@ html { overflow-y: scroll; }
   color: #ffffff;
 }
 
-/* --- SERVICE WRAPPER (About / Approach / Offer) - palavras-chave adicionadas --- */
+/* --- SERVICE WRAPPER --- */
 .service-wrapper {
   background: url('https://github.com/alc-etimo/globetech/blob/main/imgs/layout/strip-services.png?raw=true') center center no-repeat;
   background-size: cover;
@@ -203,7 +203,7 @@ html { overflow-y: scroll; }
   text-align: left;
 }
 
-/* --- BARRA DE RELOCAÇÃO --- */
+/* --- RELOCATION BAR --- */
 .relo-bar.show { transform: translateY(0); }
 .relo-bar {
   position: fixed;
@@ -231,7 +231,7 @@ html { overflow-y: scroll; }
   cursor: pointer;
 }
 
-/* --- SEÇÕES GERAIS --- */
+/* --- GENERAL SECTIONS --- */
 .section { background: var(--beige); padding-bottom: 50px;
     margin-top: -70px; }
 .section-alt { background: var(--off); }
@@ -260,9 +260,6 @@ font-size: 1.8em;
     margin: 0 0 1.5em;
 }
 
-
-
-
 /* --- WHO I AM --- */
 
 .about-intro p {
@@ -274,25 +271,10 @@ font-size: 1.8em;
     line-height: 1.5em;
     margin: 0 0 1.5em;
 }    
-
-       
-
+   
 .about-intro p strong { color: #003C78; font-weight: 500; }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* --- CASE STUDIES (Cards mantidos, sem animação) --- */
+/* --- CASE STUDIES --- */
 .case-card {
   background: var(--white);
   border: 1px solid var(--rule);
@@ -437,7 +419,7 @@ transition: transform 0.25s, box-shadow 0.25s;
 }
 
 
-/* Matriz de teste */
+/* Test Matrix */
 .matrix-wrap { overflow-x: auto; margin-bottom: 28px; }
 .matrix-table {
   width: 100%;
@@ -519,7 +501,7 @@ z-index: 5;
 
 
 
-/* --- COLLABORATIONS (foco em tecnologia/software) --- */
+/* --- COLLABORATIONS --- */
 .clients-section {
   position: relative;
   width: 100%;
@@ -733,7 +715,7 @@ position: absolute;
 </head>
 <body>
 
-<!-- BARRA DE RELOCAÇÃO -->
+<!-- RELOCATION BAR -->
 <div class="relo-bar" id="reloBar">
   <i class="fas fa-house"></i> Housing secured in Cork &nbsp;&nbsp;&nbsp;|
   <i class="fas fa-passport"></i> EU Citizenship final stage &nbsp;&nbsp;&nbsp;|
@@ -772,7 +754,7 @@ position: absolute;
   </div>
 </div>
 
-<!-- SERVICE WRAPPER (About / Approach / Offer) -->
+<!-- SERVICE WRAPPER -->
 <div class="service-wrapper" id="about">
   <div class="wrapper">
     <div class="col-3">
@@ -807,8 +789,7 @@ position: absolute;
 </section>
 
 <!-- ====================================================
-     CASE STUDIES 
-     var(--white)
+     CASE STUDIES     
      ==================================================== -->
 <section class="section section-alt" id="cases">
   <div class="section-inner" style=width:100%;">
@@ -1082,7 +1063,7 @@ position: absolute;
   </div>
 </section>
 
-<!-- RELOCATION SECTION (destacado para a vaga presencial) -->
+<!-- RELOCATION SECTION -->
 <section class="relo-section" id="relocation">
   <div class="relo-inner">
     <div class="relo-left">
@@ -1172,7 +1153,7 @@ position: absolute;
       <p>59th Vicente Domingues Vaz St<br>Torre de Pedra, SP, Brazil</p>
       <p><i class="fas fa-phone"></i> +55 (11) 9 43882913</p>
       <p><i class="fas fa-envelope"></i> ariane.etimo@gmail.com</p>
-      <p><i class="fa-solid fa-plane-departure" style="color:#2da4db;"></i>Open to realocation</i>
+      <p><i class="fa-solid fa-plane-departure" style="color:#2da4db;"></i>Open to relocation</i>
     </div>
   </div>
   <div class="sub-footer">© 2026 Ariane Lesnyak · Designed for the Localisation QA Engineer with Portuguese role at Cork · Inspired by GlobeTech.eu</div>
@@ -1198,7 +1179,7 @@ const captions = [
     "Testing localisation where language meets product behavior",
     "Making sure every string work   Linguistics · Performance · Cultural",    
     "Aligning language QA and engineering teams through clear communication",    
-    "Realocation-ready · Brazil → Ireland  EU citizenship final stage"
+    "Relocation-ready · Brazil → Ireland  EU citizenship final stage"
 ];
 function showHeroSlide(index) { heroSlides.forEach((s, i) => s.classList.toggle('active', i === index)); const captionEl = document.querySelector('#heroCaption p'); if (captionEl && captions[index]) captionEl.innerText = captions[index]; heroIdx = index; }
 function nextHeroSlide() { showHeroSlide((heroIdx + 1) % heroSlides.length); }
