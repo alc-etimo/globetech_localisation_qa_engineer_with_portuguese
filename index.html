@@ -25,9 +25,7 @@
   --text:      #1a2b3c;
   --muted:     #5a7082;
   --rule:      #DDE6EF;
-  --beige:   #eeeaea;
-  --sans:      'Inter', system-ui, sans-serif;
-  --head:      'Montserrat', system-ui, sans-serif;
+  --beige:     #eeeaea;
 }
 
 html { scroll-behavior: smooth; }
@@ -85,13 +83,11 @@ html { overflow-y: scroll; }
   line-height: 27px;
   letter-spacing: 0;
   list-style: none;
-
 }
 .main-menu ul.menu > li {
   display: inline-block;
   white-space: nowrap;
   margin-left: 45px;
-
 }
 .main-menu ul.menu > li:first-child { margin-left: 0; }
 .main-menu ul.menu > li > a {
@@ -101,7 +97,7 @@ html { overflow-y: scroll; }
 }
 .main-menu ul.menu > li > a:hover { opacity: 0.7; }
 
-/* --- HERO (adaptado para a vaga) --- */
+/* --- HERO --- */
 .main-banner {
   position: relative;
   width: 100%;
@@ -232,46 +228,38 @@ html { overflow-y: scroll; }
 }
 
 /* --- GENERAL SECTIONS --- */
-.section { background: var(--beige); padding-bottom: 50px;
-    margin-top: -70px; }
+.section { background: var(--beige); padding-bottom: 50px; margin-top: -70px; }
 .section-alt { background: var(--off); }
 .section-inner {
   max-width: 1280px;
   margin: 0 auto;
   padding: 50px 2rem;
-
 }
-
 .section-header { margin-bottom: 56px; }
-
 .section-label {
   text-align: left;
   font-weight: 300;
   color: #2da8db;
-  margin-top:5px; 
-    line-height: 1.5em;
-    margin: 0 0 1.5em;
-    font-size: 3.8em;
+  margin-top: 5px;
+  line-height: 1.5em;
+  margin: 0 0 1.5em;
+  font-size: 3.8em;
 }
-  
 .section p {
-font-size: 1.8em;
-    line-height: 1.5em;
-    margin: 0 0 1.5em;
+  font-size: 1.8em;
+  line-height: 1.5em;
+  margin: 0 0 1.5em;
 }
 
 /* --- WHO I AM --- */
-
 .about-intro p {
-  
   font-family: 'Lato Light', sans-serif;
-  color: #8895a1;  
+  color: #8895a1;
   text-align: left;
-       font-size: 1.8em;
-    line-height: 1.5em;
-    margin: 0 0 1.5em;
-}    
-   
+  font-size: 1.8em;
+  line-height: 1.5em;
+  margin: 0 0 1.5em;
+}
 .about-intro p strong { color: #003C78; font-weight: 500; }
 
 /* --- CASE STUDIES --- */
@@ -282,11 +270,9 @@ font-size: 1.8em;
   margin-bottom: 56px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.04);
-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
 }
-
 .case-card:hover { box-shadow: 0 12px 40px rgba(0,58,110,0.1); }
-
 .case-header {
   background: var(--navy);
   padding: 28px 36px;
@@ -304,7 +290,7 @@ transition: box-shadow 0.3s;
   margin-bottom: 6px;
 }
 .case-title {
-  font-family: var(--head);
+  font-family: 'Montserrat', system-ui, sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--white);
@@ -358,12 +344,6 @@ transition: box-shadow 0.3s;
 .ps-problem h4 { color: #c53030; }
 .ps-solution h4 { color: #276749; }
 .ps-box p { font-size: 0.875rem; color: var(--text); line-height: 1.65; }
-.ba-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin-bottom: 28px;
-}
 
 /* Before / After */
 .ba-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 28px; }
@@ -372,9 +352,8 @@ transition: box-shadow 0.3s;
   border-radius: 2px;
   background: var(--off);
   border-left: 4px solid var(--rule);
-transition: transform 0.25s, box-shadow 0.25s;
+  transition: transform 0.25s, box-shadow 0.25s;
 }
-
 .ba-box:hover { transform: scale(1.015); box-shadow: 0 6px 20px rgba(0,0,0,0.07); }
 .ba-before { border-left-color: #fc8181; }
 .ba-after { border-left-color: var(--green); }
@@ -418,7 +397,6 @@ transition: transform 0.25s, box-shadow 0.25s;
   transition: width 1.4s cubic-bezier(0.22, 0.97, 0.36, 1);
 }
 
-
 /* Test Matrix */
 .matrix-wrap { overflow-x: auto; margin-bottom: 28px; }
 .matrix-table {
@@ -442,13 +420,11 @@ transition: transform 0.25s, box-shadow 0.25s;
 }
 .matrix-table tr:hover td { background: var(--blue-lt); }
 .matrix-table tr:nth-child(even) td { background: var(--off); }
-.matrix-table tr:hover td { background: var(--blue-lt) !important; }
-
 .badge-pass { background: #C6F6D5; color: #276749; padding: 2px 8px; border-radius: 20px; font-weight: 600; font-size: 0.72rem; }
 .badge-bug  { background: #FED7D7; color: #c53030; padding: 2px 8px; border-radius: 20px; font-weight: 600; font-size: 0.72rem; }
 .badge-na   { background: var(--rule); color: var(--muted); padding: 2px 8px; border-radius: 20px; font-weight: 600; font-size: 0.72rem; }
 
-   /* ── CASE 2: Interactive Bug Timeline ── */
+/* Bug Timeline */
 .bug-timeline { margin: 0 0 28px; }
 .bug-steps { display: flex; gap: 0; overflow-x: auto; margin-bottom: 0; }
 .bug-step {
@@ -475,7 +451,6 @@ transition: transform 0.25s, box-shadow 0.25s;
 }
 .bug-step.active .bs-connector { display: block; }
 .bug-step:last-child .bs-connector { display: none; }
-
 .bug-detail {
   background: var(--white); border: 1px solid var(--rule);
   padding: 22px 26px; border-top: none;
@@ -483,24 +458,32 @@ transition: transform 0.25s, box-shadow 0.25s;
 }
 .bug-detail h5 { font-size: 0.9rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
 
-   .bug-detail  p {font-size:0.87rem;color:var(--muted);"}
-
-/* =========================================================
-   SKILLS SECTION
-   ========================================================= */
+/* --- SKILLS SECTION --- */
 .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .skill-card {
-  background: var(--white); border: 1px solid var(--rule);
-  border-top: 3px solid var(--blue); padding: 24px;
+  background: var(--white);
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--blue);
+  padding: 24px;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 .skill-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,58,110,0.1); }
-.skill-card h3 { font-size: 0.85rem; font-weight: 700; color: var(--navy); margin-bottom: 14px; letter-spacing: 0.3px; }
-.skill-tags { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center;}
+.skill-card h3 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 14px;
+  letter-spacing: 0.3px;
+  text-align: center;
+}
+.skill-tags { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
 .skill-tag {
-  font-size: 0.72rem; padding: 3px 10px;
-  background: var(--blue-lt); color: var(--navy);
-  border-radius: 2px; font-weight: 500;
+  font-size: 0.72rem;
+  padding: 3px 10px;
+  background: var(--blue-lt);
+  color: var(--navy);
+  border-radius: 2px;
+  font-weight: 500;
 }
 
 /* --- RELOCATION --- */
@@ -508,8 +491,8 @@ transition: transform 0.25s, box-shadow 0.25s;
   background: var(--navy);
   padding: 80px 0;
   margin-top: 0;
-z-index: 5;
-    margin-bottom: -50px;
+  z-index: 5;
+  margin-bottom: -50px;
 }
 .relo-inner {
   max-width: 1280px;
@@ -536,8 +519,6 @@ z-index: 5;
 .relo-checklist li:last-child { border-bottom: none; }
 .relo-check { color: var(--blue-lit); font-size: 1rem; flex-shrink: 0; margin-top: 2px; }
 
-
-
 /* --- COLLABORATIONS --- */
 .clients-section {
   position: relative;
@@ -547,17 +528,15 @@ z-index: 5;
   background: transparent;
   margin: 40px 0;
 }
-
 .clients-section .top-strip {
-position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 54px;
-    left: 0;
-    background: url(https://github.com/alc-etimo/globetech/blob/main/imgs/layout/strip-grey-top.png?raw=true') center top no-repeat;
-    z-index: 101;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 54px;
+  left: 0;
+  background: url('https://github.com/alc-etimo/globetech/blob/main/imgs/layout/strip-grey-top.png?raw=true') center top no-repeat;
+  z-index: 101;
 }
-
 .clients-bg-slides {
   position: absolute;
   top: 0;
@@ -608,7 +587,7 @@ position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ffffff;;
+  background: #ffffff;
   border-radius: 12px;
   padding: 10px;
 }
@@ -675,7 +654,7 @@ position: absolute;
   background-color: #a9bac8;
   text-decoration: none;
   transition: background-color 300ms;
-  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.4);
   color: white;
   font-size: 2rem;
 }
@@ -697,7 +676,7 @@ position: absolute;
   gap: 10px;
 }
 .footer-logo-col { flex: 1; min-width: 180px; }
-.footer-logo-col img { max-width: 400px; height: auto; margin-top:10px;}
+.footer-logo-col img { max-width: 400px; height: auto; margin-top: 10px; }
 .footer-links-col { flex: 2; display: flex; justify-content: center; }
 .footer-links-col ul { list-style: none; margin: 0; padding: 0; }
 .footer-links-col ul li { margin-bottom: 12px; }
@@ -705,34 +684,26 @@ position: absolute;
   text-decoration: none;
   color: #9caf8f;
   font-size: 16px;
-  font-famile: 'Lato Regular', sans-serif;
+  font-family: 'Lato Regular', sans-serif;
   line-height: 24px;
   transition: color 0.2s;
 }
-
 .footer-address-col { flex: 1; text-align: right; min-width: 220px; }
 .footer-address-col h5 { font-size: 1.2rem; color: #2da4db; margin-bottom: 10px; font-weight: 400; }
 .footer-address-col p { font-size: 0.9rem; color: #9cafbf; line-height: 1.6; margin-bottom: 8px; }
 .footer-address-col i { margin-right: 8px; color: #2da4db; }
-
-@media only screen and (max-width: 1380px) {
-    .sub-footer {
-        padding: 50px 0 50px;
-    }
-}
 .sub-footer {
   background: url('https://github.com/alc-etimo/globetech/blob/main/imgs/layout/strip-footer.png?raw=true') center top no-repeat;
-    background-size: cover;
-    padding: 60px 0;
-    text-align: center;
-    color: white;
-    font-size: 14px;
-    margin-bottom:30px;
+  background-size: cover;
+  padding: 60px 0;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 30px;
 }
 
-
 @media (max-width: 900px) {
-  .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
   .ps-row, .ba-row, .relo-inner { grid-template-columns: 1fr; }
   .col-3 > div.col { width: 100%; text-align: center; }
   .title-wrapper { justify-content: center; }
@@ -745,7 +716,7 @@ position: absolute;
   .footer-address-col { text-align: center; }
 }
 @media (max-width: 640px) {
-  .skills-grid { grid-template-columns: 1fr 1fr; }
+  .skills-grid { grid-template-columns: 1fr; }
   .slide-text p, .clients-box { font-size: 22px; line-height: 34px; }
 }
 </style>
@@ -784,10 +755,10 @@ position: absolute;
       <div class="slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/hero/gt-bg19.jpg?raw=true');"></div>
       <div class="slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/hero/gt-bg14.jpg?raw=true');"></div>
       <div class="slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/hero/gt-bg7.jpg?raw=true');"></div>
-<div class="slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/hero/gt-bg6.jpg?raw=true');"></div>
-<div class="slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/hero/gt-bg3.jpg?raw=true');"></div>
+      <div class="slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/hero/gt-bg6.jpg?raw=true');"></div>
+      <div class="slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/hero/gt-bg3.jpg?raw=true');"></div>
     </div>
-    <div class="slide-text" id="heroCaption"><p>Breaking software to make it better  Engineering-ready bug reporting</p></div>
+    <div class="slide-text" id="heroCaption"><p>Breaking software to make it better · Engineering-ready bug reporting</p></div>
   </div>
 </div>
 
@@ -815,13 +786,11 @@ position: absolute;
 <section class="section" id="about-intro">
   <div class="section-inner">
     <div class="section-header text-left">
-
-      <div class="section-label" style="text-align:left;">Who I Am</div>          
+      <div class="section-label" style="text-align:left;">Who I Am</div>
     </div>
-      <p>I'm a <strong>native Brazilian Portuguese linguist</strong> and Localisation QA Engineer with an IT background that lets me bridge the gap between engineering and linguistics. I've spent over a decade finding the bugs that slip through — text expansion on iOS, truncation on macOS, functional failures that only surface when a string is translated into Portuguese.</p>
-      <p>My approach is methodical: I document every issue with <strong>reproduction steps, screenshots, and screen recordings</strong>, categorised by severity and type. Engineering teams I've worked with adopted my reporting format company-wide because it accelerated fix cycles by <strong>40%.</strong></p>
-      <p>I've worked cross-functionally with <strong>international QA centres, documentation engineering teams, translators, and project managers</strong> — exactly the environment GlobeTech builds. I'm currently developing Python skills for test automation, building on my existing HTML/XML/JSON experience.</p>
-    </div>
+    <p>I'm a <strong>native Brazilian Portuguese linguist</strong> and Localisation QA Engineer with an IT background that lets me bridge the gap between engineering and linguistics. I've spent over a decade finding the bugs that slip through — text expansion on iOS, truncation on macOS, functional failures that only surface when a string is translated into Portuguese.</p>
+    <p>My approach is methodical: I document every issue with <strong>reproduction steps, screenshots, and screen recordings</strong>, categorised by severity and type. Engineering teams I've worked with adopted my reporting format company-wide because it accelerated fix cycles by <strong>40%.</strong></p>
+    <p>I've worked cross-functionally with <strong>international QA centres, documentation engineering teams, translators, and project managers</strong> — exactly the environment GlobeTech builds. I'm currently developing Python skills for test automation, building on my existing HTML/XML/JSON experience.</p>
   </div>
 </section>
 
@@ -829,344 +798,112 @@ position: absolute;
      CASE STUDIES     
      ==================================================== -->
 <section class="section section-alt" id="cases">
-  <div class="section-inner" style=width:100%;">
-    <div class="section-header"><div class="section-label">Case Studies</div><div class="section-title" style="font-size: 2.8rem;
-    font-weight: 800;
-    color: #003A6E;
-    margin-bottom: 20px;"><strong>Localisation QA in practice</strong></div><p class="section-sub">Four real-world cases demonstrating systematic reporting, cross-platform testing, functional beta testing, and process innovation for AI training data, each directly aligned with the responsibilities in the <strong>GlobeTech Localisation QA Engineer role</strong>.</p></div>
+  <div class="section-inner" style="width:100%;">
+    <div class="section-header">
+      <div class="section-label">Case Studies</div>
+      <div class="section-title" style="font-size: 2.8rem; font-weight: 800; color: #003A6E; margin-bottom: 30px;">
+        <strong>Localisation QA in practice</strong>
+      </div>
+      <p class="section-sub">Four real-world cases demonstrating systematic reporting, cross-platform testing, functional beta testing, and QA lifecycle management — each directly aligned with the responsibilities in the <strong>GlobeTech Localisation QA Engineer role</strong>.</p>
+    </div>
 
     <!-- CASE 1: Systematic Bug Reporting -->
     <div class="case-card">
       <div class="case-header"><div><div class="case-num">Case Study 01</div><div class="case-title">Systematic Bug Reporting on macOS & iOS Localisation</div><small style="font-weight:400;font-size:0.9rem;color:rgba(255,255,255,0.7)">Global vendors protected under NDAs</small><div class="case-tags"><span class="case-tag">Manual Localisation Testing</span><span class="case-tag">Bug Tracking · Jira</span><span class="case-tag">macOS · iOS</span><span class="case-tag">Reproduction Steps</span></div></div><div class="case-badge">⭐ Core Match</div></div>
-      <div class="case-body"><div class="ps-row"><div class="ps-box ps-problem"><h4>❗ Key Challenge</h4><p>High-volume localisation projects for consumer electronics software (macOS, iOS, hardware UI) required systematic testing of Portuguese (BR) strings. Engineering teams were receiving vague bug reports that were difficult to reproduce, leading to slow fix cycles and re-test loops.</p></div><div class="ps-box ps-solution"><h4>✅ My Approach</h4><p>Developed a structured reporting methodology: every bug filed with OS version, device model, build number, numbered reproduction steps, and suggested fixes. </p></div></div><div class="ba-row"><div class="ba-box ba-before"><strong>⬅ Before</strong><ul><li>❌ Vague reports: "text is cut off"</li><li>❌ No reproduction steps or context</li><li>❌ Fix cycle: avg. 7 days per issue</li></ul></div><div class="ba-box ba-after"><strong>➡ After</strong><ul><li>✅ 150+ fully documented defects</li><li>✅ Numbered steps + annotated screenshots</li><li>✅ 65% fix-rate improvement</li></ul></div></div><div class="metrics-wrap">
-
-<div class="metric-row"><div class="metric-head"><span>Engineering Fix-Rate Improvement</span><span>65%</span></div><div class="bar-track"><div class="bar-fill" data-width="65"></div></div></div>
-
-<div class="metric-row"><div class="metric-head"><span>Issue Resolution Cycle Reduction</span><span>40%</span></div><div class="bar-track"><div class="bar-fill" data-width="40"></div></div></div>
-
-<div class="metric-row"><div class="metric-head"><span>UI String Accuracy Rate</span><span>90%</span></div><div class="bar-track"><div class="bar-fill" data-width="90"></div></div></div>
-</div></div>
+      <div class="case-body"><div class="ps-row"><div class="ps-box ps-problem"><h4>❗ Key Challenge</h4><p>High-volume localisation projects for consumer electronics software (macOS, iOS, hardware UI) required systematic testing of Portuguese (BR) strings. Engineering teams were receiving vague bug reports that were difficult to reproduce, leading to slow fix cycles and re-test loops.</p></div><div class="ps-box ps-solution"><h4>✅ My Approach</h4><p>Developed a structured reporting methodology: every bug filed with OS version, device model, build number, numbered reproduction steps, and suggested fixes.</p></div></div><div class="ba-row"><div class="ba-box ba-before"><strong>⬅ Before</strong><ul><li>❌ Vague reports: "text is cut off"</li><li>❌ No reproduction steps or context</li><li>❌ Fix cycle: avg. 7 days per issue</li></ul></div><div class="ba-box ba-after"><strong>➡ After</strong><ul><li>✅ 150+ fully documented defects</li><li>✅ Numbered steps + annotated screenshots</li><li>✅ 65% fix-rate improvement</li></ul></div></div><div class="metrics-wrap">
+        <div class="metric-row"><div class="metric-head"><span>Engineering Fix-Rate Improvement</span><span>65%</span></div><div class="bar-track"><div class="bar-fill" data-width="65"></div></div></div>
+        <div class="metric-row"><div class="metric-head"><span>Issue Resolution Cycle Reduction</span><span>40%</span></div><div class="bar-track"><div class="bar-fill" data-width="40"></div></div></div>
+        <div class="metric-row"><div class="metric-head"><span>UI String Accuracy Rate</span><span>90%</span></div><div class="bar-track"><div class="bar-fill" data-width="90"></div></div></div>
+      </div></div>
     </div>
 
     <!-- CASE 2: Cross-Platform Testing -->
     <div class="case-card">
       <div class="case-header"><div><div class="case-num">Case Study 02</div><div class="case-title">Cross-Platform Localisation Testing · macOS, iOS, UX/UI</div><small style="font-weight:400;font-size:0.9rem;color:rgba(255,255,255,0.7)">Software documentation & hardware UI</small>
-
-<div class="case-tags"><span class="case-tag">Text Expansion · Truncation</span><span class="case-tag">Funcional Bugs</span><span class="case-tag">Hardware UI</span><span class="case-tag">UI/UX Validation</span></span></div></div></div>
-
-
+      <div class="case-tags"><span class="case-tag">Text Expansion · Truncation</span><span class="case-tag">Functional Bugs</span><span class="case-tag">Hardware UI</span><span class="case-tag">UI/UX Validation</span></div></div></div>
       <div class="case-body"><div class="ps-row"><div class="ps-box ps-problem"><h4>❗ Key Challenge</h4><p>PT-BR expansion +30% causing layout failures across platforms.</p></div><div class="ps-box ps-solution"><h4>✅ My Approach</h4><p>Test cases per platform, regression passes, screenshots from devices.</p></div></div>
-
-<p style="margin-bottom:25px;font-size:0.87rem;color:var(--muted);">
-          Sample test coverage matrix from a multi-platform localisation cycle, showing the systematic approach applied across devices, content types, and issue categories:
-        </p>
-
-        <!-- Interactive Coverage Matrix -->
-        <div class="matrix-wrap">
-          <table class="matrix-table">
-            <thead>
-              <tr>
-                <th>Test Area</th>
-                <th>macOS</th>
-                <th>iOS</th>
-                <th>Android</th>
-                <th>Print / Docs</th>
-                <th>Hardware UI</th>
-                <th>Issue Type</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>UI String Length / Truncation</td>
-                <td><span class="badge-bug">BUG</span></td>
-                <td><span class="badge-bug">BUG</span></td>
-                <td><span class="badge-pass">PASS</span></td>
-                <td><span class="badge-na">N/A</span></td>
-                <td><span class="badge-bug">BUG</span></td>
-                <td>Functional + Linguistic</td>
-               </tr>
-              <tr>
-                <td>Text Expansion (PT-BR is ~30% longer)</td>
-                <td><span class="badge-bug">BUG</span></td>
-                <td><span class="badge-bug">BUG</span></td>
-                <td><span class="badge-bug">BUG</span></td>
-                <td><span class="badge-pass">PASS</span></td>
-                <td><span class="badge-na">N/A</span></td>
-                <td>Layout / Functional</td>
-               </tr>
-              <tr>
-                <td>Cultural Adaptation (date, currency)</td>
-                <td><span class="badge-pass">PASS</span></td>
-                <td><span class="badge-bug">BUG</span></td>
-                <td><span class="badge-pass">PASS</span></td>
-                <td><span class="badge-bug">BUG</span></td>
-                <td><span class="badge-na">N/A</span></td>
-                <td>Linguistic</td>
-               </tr>
-              <tr>
-                <td>Help Content Consistency</td>
-                <td><span class="badge-pass">PASS</span></td>
-                <td><span class="badge-pass">PASS</span></td>
-                <td><span class="badge-pass">PASS</span></td>
-                <td><span class="badge-bug">BUG</span></td>
-                <td><span class="badge-na">N/A</span></td>
-                <td>Linguistic</td>
-               </tr>
-              <tr>
-                <td>Special Characters / Encoding</td>
-                <td><span class="badge-pass">PASS</span></td>
-                <td><span class="badge-bug">BUG</span></td>
-                <td><span class="badge-pass">PASS</span></td>
-                <td><span class="badge-pass">PASS</span></td>
-                <td><span class="badge-pass">PASS</span></td>
-                <td>Functional</td>
-               </tr>
-              <tr>
-                <td>Hardware Label Alignment</td>
-                <td><span class="badge-na">N/A</span></td>
-                <td><span class="badge-na">N/A</span></td>
-                <td><span class="badge-na">N/A</span></td>
-                <td><span class="badge-na">N/A</span></td>
-                <td><span class="badge-bug">BUG</span></td>
-                <td>Functional + Layout</td>
-               </tr>
-              <tr>
-                <td>Terminology Consistency</td>
-                <td><span class="badge-pass">PASS</span></td>
-                <td><span class="badge-pass">PASS</span></td>
-                <td><span class="badge-pass">PASS</span></td>
-                <td><span class="badge-bug">BUG</span></td>
-                <td><span class="badge-pass">PASS</span></td>
-                <td>Linguistic</td>
-               </tr>
-            </tbody>
-          </table>
-        </div>
-
-  <div class="ba-row"><div class="ba-box ba-before"><strong>⬅ Before</strong><ul><li>❌ Truncated labels on macOS menus and buttons</li><li>❌ Hardware UI labels overlapping or misaligned</li><li>❌ No standardised test coverage across platforms</li></ul></div><div class="ba-box ba-after"><strong>➡ After</strong><ul><li>✅ 100% test coverage matrix for all platforms</li><li>✅ Text expansion validation for every bounded UI component</li><li>✅ Hardware label alignment verified on physical devices</li></ul></div></div>  
-
-
-        <div class="metrics-wrap">
-          <div class="metric-row">
-            <div class="metric-head"><span>Formatting & Linguistic Inconsistency Reduction</span><span>60%</span></div>
-            <div class="bar-track"><div class="bar-fill" data-width="60"></div></div>
-          </div>
-          <div class="metric-row">
-            <div class="metric-head"><span>Issue Resolution Cycle Acceleration</span><span>40%</span></div>
-            <div class="bar-track"><div class="bar-fill" data-width="40"></div></div>
-          </div>
-          <div class="metric-row">
-            <div class="metric-head"><span>Language Variants Tested</span><span>12+</span></div>
-            <div class="bar-track"><div class="bar-fill" data-width="80"></div></div>
-          </div>
-        </div>
+      <p style="margin-bottom:25px;font-size:0.87rem;color:var(--muted);">Sample test coverage matrix from a multi-platform localisation cycle, showing the systematic approach applied across devices, content types, and issue categories:</p>
+      <div class="matrix-wrap">
+        <table class="matrix-table">
+          <thead><tr><th>Test Area</th><th>macOS</th><th>iOS</th><th>Android</th><th>Print / Docs</th><th>Hardware UI</th><th>Issue Type</th></tr></thead>
+          <tbody>
+            <tr><td>UI String Length / Truncation</td><td><span class="badge-bug">BUG</span></td><td><span class="badge-bug">BUG</span></td><td><span class="badge-pass">PASS</span></td><td><span class="badge-na">N/A</span></td><td><span class="badge-bug">BUG</span></td><td>Functional + Linguistic</td></tr>
+            <tr><td>Text Expansion (PT-BR is ~30% longer)</td><td><span class="badge-bug">BUG</span></td><td><span class="badge-bug">BUG</span></td><td><span class="badge-bug">BUG</span></td><td><span class="badge-pass">PASS</span></td><td><span class="badge-na">N/A</span></td><td>Layout / Functional</td></tr>
+            <tr><td>Cultural Adaptation (date, currency)</td><td><span class="badge-pass">PASS</span></td><td><span class="badge-bug">BUG</span></td><td><span class="badge-pass">PASS</span></td><td><span class="badge-bug">BUG</span></td><td><span class="badge-na">N/A</span></td><td>Linguistic</td></tr>
+            <tr><td>Help Content Consistency</td><td><span class="badge-pass">PASS</span></td><td><span class="badge-pass">PASS</span></td><td><span class="badge-pass">PASS</span></td><td><span class="badge-bug">BUG</span></td><td><span class="badge-na">N/A</span></td><td>Linguistic</td></tr>
+            <tr><td>Special Characters / Encoding</td><td><span class="badge-pass">PASS</span></td><td><span class="badge-bug">BUG</span></td><td><span class="badge-pass">PASS</span></td><td><span class="badge-pass">PASS</span></td><td><span class="badge-pass">PASS</span></td><td>Functional</td></tr>
+            <tr><td>Hardware Label Alignment</td><td><span class="badge-na">N/A</span></td><td><span class="badge-na">N/A</span></td><td><span class="badge-na">N/A</span></td><td><span class="badge-na">N/A</span></td><td><span class="badge-bug">BUG</span></td><td>Functional + Layout</td></tr>
+            <tr><td>Terminology Consistency</td><td><span class="badge-pass">PASS</span></td><td><span class="badge-pass">PASS</span></td><td><span class="badge-pass">PASS</span></td><td><span class="badge-bug">BUG</span></td><td><span class="badge-pass">PASS</span></td><td>Linguistic</td></tr>
+          </tbody>
+        </table>
       </div>
+      <div class="ba-row"><div class="ba-box ba-before"><strong>⬅ Before</strong><ul><li>❌ Truncated labels on macOS menus and buttons</li><li>❌ Hardware UI labels overlapping or misaligned</li><li>❌ No standardised test coverage across platforms</li></ul></div><div class="ba-box ba-after"><strong>➡ After</strong><ul><li>✅ 100% test coverage matrix for all platforms</li><li>✅ Text expansion validation for every bounded UI component</li><li>✅ Hardware label alignment verified on physical devices</li></ul></div></div>
+      <div class="metrics-wrap">
+        <div class="metric-row"><div class="metric-head"><span>Formatting & Linguistic Inconsistency Reduction</span><span>60%</span></div><div class="bar-track"><div class="bar-fill" data-width="60"></div></div></div>
+        <div class="metric-row"><div class="metric-head"><span>Issue Resolution Cycle Acceleration</span><span>40%</span></div><div class="bar-track"><div class="bar-fill" data-width="40"></div></div></div>
+        <div class="metric-row"><div class="metric-head"><span>Language Variants Tested</span><span>12+</span></div><div class="bar-track"><div class="bar-fill" data-width="80"></div></div></div>
+      </div>
+    </div>
     </div>
 
     <!-- CASE 3: Functional Beta Testing for Software Family Suite -->
     <div class="case-card">
       <div class="case-header"><div><div class="case-num">Case Study 03</div><div class="case-title">Functional Beta Testing for a Software Family Suite</div><div class="case-tags"><span class="case-tag">Functional Testing</span><span class="case-tag">Beta Environment</span><span class="case-tag">Screenshots Annotation</span><span class="case-tag">Cloud-based platforms</span></div></div><div class="case-badge">Functional QA</div></div>
-
-<small style="font-weight:400;font-size:0.9rem;color:rgba(255,255,255,0.7)">Global client protected under NDAs</small>
-
+      <small style="font-weight:400;font-size:0.9rem;color:rgba(255,255,255,0.7)">Global client protected under NDAs</small>
       <div class="case-body"><div class="ps-row"><div class="ps-box ps-problem"><h4>❗ Key Challenge</h4><p>A software family suite required validation of new features, frequently asked question pages, and updates in beta versions of programs for the Brazilian Portuguese market.</p></div><div class="ps-box ps-solution"><h4>✅ My Approach</h4><p>Executed systematic functional testing across beta builds. Each issue documented with annotated screenshots, reproduction steps, and actionable suggestions for engineering teams.</p></div></div>
+      <div class="ba-row"><div class="ba-box ba-before"><strong>⬅ Before</strong><ul><li>❌ Issues found only after public release or late beta stages</li><li>❌ Broken and endlessly loading links</li><li>❌ Vague bug reports without reproduction steps</li></ul></div><div class="ba-box ba-after"><strong>➡ After</strong><ul><li>✅ Annotated screenshots with arrows, circles, and highlights</li><li>✅ 50+ issues identified pre-release across 3 beta builds</li><li>✅ Numbered reproduction steps for validation</li></ul></div></div>
+      <div class="metrics-wrap">
+        <div class="metric-row"><div class="metric-head"><span>Issues Identified Pre-Release</span><span>50</span></div><div class="bar-track"><div class="bar-fill" data-width="80"></div></div></div>
+        <div class="metric-row"><div class="metric-head"><span>Fix Implementation Rate</span><span>100%</span></div><div class="bar-track"><div class="bar-fill" data-width="100"></div></div></div>
+        <div class="metric-row"><div class="metric-head"><span>Resolution Cycle Time Improvement</span><span>-60%</span></div><div class="bar-track"><div class="bar-fill" data-width="90"></div></div></div>
+      </div></div>
+    </div>
 
-<div class="ba-row"><div class="ba-box ba-before"><strong>⬅ Before</strong><ul><li>❌ Issues found only after public release or late beta stages</li><li>❌ Broken and endlessly loading links</li><li>❌ Vague bug reports without reproduction steps</li></ul></div><div class="ba-box ba-after"><strong>➡ After</strong><ul><li>✅ Annotated screenshots with arrows, circles, and highlights</li><li>✅ 50+ issues identified pre-release across 3 beta builds</li><li>✅ Numbered reproduction steps for validation</li></ul></div></div>  
-
-<div class="metrics-wrap">
-<div class="metric-row">
-<div class="metric-head">
-<span>Issues Identified Pre-Release</span>
-<span>50</span>
-</div>
-<div class="bar-track">
-<div class="bar-fill" data-width="80"></div></div></div>
-
-<div class="metric-row">
-<div class="metric-head">
-<span>Fix Implementation Rate</span>
-<span>100%</span>
-</div>
-<div class="bar-track">
-<div class="bar-fill" data-width="100"></div></div></div>
-
-<div class="metric-row">
-<div class="metric-head">
-<span>Resolution Cycle Time Improvement</span>
-<span>-60%</span>
-</div>
-<div class="bar-track">
-<div class="bar-fill" data-width="90"></div></div></div>
-    </div></div></div>
-
-     <!-- ───── CASE 4: Bug Lifecycle / Interactive Timeline ───── -->
+    <!-- CASE 4: End-to-End QA Lifecycle -->
     <div class="case-card">
-      <div class="case-header">
-        <div>
-          <div class="case-num">Case Study 02</div>
-          <div class="case-title">End-to-End QA Testing Lifecycle: CRM & Chatbot Software<br><small style="font-weight:400;font-size:0.9rem;color:rgba(255,255,255,0.7)">TeamWorker · Major Telecom Client · 30,000+ users</small></div>
-          <div class="case-tags">
-            <span class="case-tag">QA Lifecycle</span>
-            <span class="case-tag">Test Plan Design</span>
-            <span class="case-tag">Error Taxonomy</span>
-            <span class="case-tag">QA Dashboards</span>
-          </div>
-        </div>
-        <div class="case-badge">End-to-End QA</div>
-      </div>
-
-       <div class="case-body">
-        <div class="ps-row">
-          <div class="ps-box ps-problem"><h4>❗ Challenge</h4><p>Fragmented QA process for CRM software and chatbot interfaces serving 30,000+ call centre agents caused terminology drift, slow issue resolution, and inconsistent quality across releases.</p></div>
-          <div class="ps-box ps-solution"><h4>✅ Approach</h4><p>Led full QA lifecycle: test plan design, execution, bug filing in Jira with numbered reproduction steps, engineering handoff, regression testing, and QA dashboard reporting with structured error taxonomies.</p></div>
-        </div>
-          
-        <p style="font-size:0.87rem;color:var(--muted);">
-          Led the full QA testing lifecycle for CRM software and chatbot interfaces used by 30,000+ call centre agents. 
-          Click each phase to explore the approach:
-        </p>
-         <!-- Animated step-by-step bug lifecycle -->
+      <div class="case-header"><div><div class="case-num">Case Study 04</div><div class="case-title">End-to-End QA Lifecycle: CRM & Chatbot Software</div><small style="font-weight:400;font-size:0.9rem;color:rgba(255,255,255,0.7)">TeamWorker · Major Telecom Client · 30,000+ users</small>
+      <div class="case-tags"><span class="case-tag">QA Lifecycle</span><span class="case-tag">Test Plan Design</span><span class="case-tag">Error Taxonomy</span><span class="case-tag">QA Dashboards</span></div></div><div class="case-badge">End-to-End QA</div></div>
+      <div class="case-body">
+        <div class="ps-row"><div class="ps-box ps-problem"><h4>❗ Challenge</h4><p>Fragmented QA process for CRM software and chatbot interfaces serving 30,000+ call centre agents caused terminology drift, slow issue resolution, and inconsistent quality across releases.</p></div><div class="ps-box ps-solution"><h4>✅ Approach</h4><p>Led full QA lifecycle: test plan design, execution, bug filing in Jira with numbered reproduction steps, engineering handoff, regression testing, and QA dashboard reporting with structured error taxonomies.</p></div></div>
+        <p style="font-size:0.87rem;color:var(--muted);">Led the full QA testing lifecycle for CRM software and chatbot interfaces used by 30,000+ call centre agents. Click each phase to explore the approach:</p>
         <div class="bug-timeline">
           <div class="bug-steps" id="bugSteps">
-            <div class="bug-step active" data-step="0">
-              <div class="bs-icon">📋</div>
-              <div class="bs-label">Test Plan</div>
-              <div class="bs-connector"></div>
-            </div>
-            <div class="bug-step" data-step="1">
-              <div class="bs-icon">🔎</div>
-              <div class="bs-label">Execution</div>
-              <div class="bs-connector"></div>
-            </div>
-            <div class="bug-step" data-step="2">
-              <div class="bs-icon">🐛</div>
-              <div class="bs-label">Bug Filing</div>
-              <div class="bs-connector"></div>
-            </div>
-            <div class="bug-step" data-step="3">
-              <div class="bs-icon">⚙️</div>
-              <div class="bs-label">Engineering</div>
-              <div class="bs-connector"></div>
-            </div>
-            <div class="bug-step" data-step="4">
-              <div class="bs-icon">✅</div>
-              <div class="bs-label">Regression</div>
-              <div class="bs-connector"></div>
-            </div>
-            <div class="bug-step" data-step="5">
-              <div class="bs-icon">📊</div>
-              <div class="bs-label">Dashboard</div>
-            </div>
+            <div class="bug-step active" data-step="0"><div class="bs-icon">📋</div><div class="bs-label">Test Plan</div><div class="bs-connector"></div></div>
+            <div class="bug-step" data-step="1"><div class="bs-icon">🔎</div><div class="bs-label">Execution</div><div class="bs-connector"></div></div>
+            <div class="bug-step" data-step="2"><div class="bs-icon">🐛</div><div class="bs-label">Bug Filing</div><div class="bs-connector"></div></div>
+            <div class="bug-step" data-step="3"><div class="bs-icon">⚙️</div><div class="bs-label">Engineering</div><div class="bs-connector"></div></div>
+            <div class="bug-step" data-step="4"><div class="bs-icon">✅</div><div class="bs-label">Regression</div><div class="bs-connector"></div></div>
+            <div class="bug-step" data-step="5"><div class="bs-icon">📊</div><div class="bs-label">Dashboard</div></div>
           </div>
-
-          <div class="bug-detail" id="bugDetail">
-            <h5>Test Plan Design</h5>
-            <p style="font-size: 0.87rem;
-    color: var(--muted);
-    line-height: 1.7;">Designed manual test plans covering CRM content, chatbot scripts, and documentation. Defined test scope, entry/exit criteria, test cases by severity, and assigned coverage to 15+ team members. Plans were stored in a shared repository and versioned alongside software builds.</p>
-          </div>
+          <div class="bug-detail" id="bugDetail"><h5>Test Plan Design</h5><p style="font-size:0.87rem;color:var(--muted);line-height:1.7;">Designed manual test plans covering CRM content, chatbot scripts, and documentation. Defined test scope, entry/exit criteria, test cases by severity, and assigned coverage to 15+ team members. Plans were stored in a shared repository and versioned alongside software builds.</p></div>
         </div>
-
         <div class="metrics-wrap">
-          <div class="metric-row">
-            <div class="metric-head"><span>Rework Cycle Reduction</span><span>30%</span></div>
-            <div class="bar-track"><div class="bar-fill" data-width="30"></div></div>
-          </div>
-          <div class="metric-row">
-            <div class="metric-head"><span>Team Delivery Consistency Improvement</span><span>85%</span></div>
-            <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
-          </div>
-          <div class="metric-row">
-            <div class="metric-head"><span>Terminology Inconsistency Reduction</span><span>60%</span></div>
-            <div class="bar-track"><div class="bar-fill" data-width="60"></div></div>
-          </div>
+          <div class="metric-row"><div class="metric-head"><span>Rework Cycle Reduction</span><span>30%</span></div><div class="bar-track"><div class="bar-fill" data-width="30"></div></div></div>
+          <div class="metric-row"><div class="metric-head"><span>Team Delivery Consistency Improvement</span><span>85%</span></div><div class="bar-track"><div class="bar-fill" data-width="85"></div></div></div>
+          <div class="metric-row"><div class="metric-head"><span>Terminology Inconsistency Reduction</span><span>60%</span></div><div class="bar-track"><div class="bar-fill" data-width="60"></div></div></div>
         </div>
       </div>
     </div>
 
-    
+  </div>
 </section>
 
 <!-- ====================================================
-     SKILLS
+     SKILLS SECTION
      ==================================================== -->
 <section class="section" id="skills">
   <div class="section-inner">
     <div class="section-header">
       <div class="section-label">Technical Competencies</div>
-      <div class="section-title" style="font-size: 2.8rem;
-    font-weight: 800;
-    color: #003A6E;
-    margin-bottom: 30px;"><strong>
-
-<div class="section-title">Skills directly aligned with the Localisation QA Engineer with Portuguese role at GlobeTech</strong></div></div>
+      <div class="section-title" style="font-size: 2.8rem; font-weight: 800; color: #003A6E; margin-bottom: 30px;"><strong>Skills aligned with the Localisation QA Engineer role</strong></div>
     </div>
-
     <div class="skills-grid">
-      <div class="skill-card" >
-        <h3 style="text-align:center;"><i class="fas fa-search" style="color:#2da4db;"></i> QA & Testing</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">Localisation Testing</span>
-          <span class="skill-tag">Test Plan Design</span>
-          <span class="skill-tag">Beta Environments</span>
-          <span class="skill-tag">LQA Taxonomy</span>
-          <span class="skill-tag">Regression Testing</span>
-          <span class="skill-tag">Error Classification</span>
-        </div>
-      </div>
-      <div class="skill-card" style="text-align:center;">
-        <h3><i class="fas fa-bug" style="color:#2da4db;"></i> Bug Tracking & Reporting</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">Jira</span>
-          <span class="skill-tag">Trello</span>
-          <span class="skill-tag">Documentation</span>
-          <span class="skill-tag">Reproduction Steps</span>
-          <span class="skill-tag">Screenshots & Screen Recordings</span>
-          <span class="skill-tag">Severity Classification</span>
-        </div>
-      </div>
-      <div class="skill-card" style="text-align:center;">
-        <h3><i class="fas fa-laptop-code" style="color:#2da4db;"></i> Platforms & Technical</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">macOS</span>
-          <span class="skill-tag">iOS</span>
-          <span class="skill-tag">Software and apps UI/UX</span>
-          <span class="skill-tag">Windows</span>
-          <span class="skill-tag">HTML / CSS / JSON</span>
-          <span class="skill-tag">API Validation (in progress)</span>
-        </div>
-      </div>
-      <div class="skill-card" style="text-align:center;">
-        <h3><i class="fas fa-globe" style="color:#2da4db;"></i> Localisation & Linguistic</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">Terminology Management</span>
-          <span class="skill-tag">Style Guides</span>
-          <span class="skill-tag">MTPE</span>
-          <span class="skill-tag">Cultural Adaptation</span>
-          <span class="skill-tag">CAT Tools</span>
-          <span class="skill-tag">Subtitling</span>
-        </div>
-      </div>
-      <div class="skill-card" style="text-align:center;">
-        <h3><i class="fas fa-robot" style="color:#2da4db;"></i> Automation & Technical Growth</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">Python (in progress)</span>
-          <span class="skill-tag">Text Processing</span>
-          <span class="skill-tag">Postman (in progress)</span>
-          <span class="skill-tag">Database Management</span>
-          <span class="skill-tag">Selenium (in progress)</span>
-        </div>
-      </div>
-      <div class="skill-card" style="text-align:center;">
-        <h3><span style="color:#2da4db;">🗣</span> Languages</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">Portuguese BR</span>
-          <span class="skill-tag">English — C2</span>
-          <span class="skill-tag">French — B2</span>
-          <span class="skill-tag">Spanish — B1</span>
-          <span class="skill-tag">LIBRAS (Brazilian Sign Language) — C1</span>
-        </div>
-      </div>
+      <div class="skill-card"><h3><i class="fas fa-search" style="color:#2da4db;"></i> QA & Testing</h3><div class="skill-tags"><span class="skill-tag">Manual Localisation Testing</span><span class="skill-tag">Regression Testing</span><span class="skill-tag">Test Plan Design</span><span class="skill-tag">Functional Testing</span><span class="skill-tag">Beta Environments</span><span class="skill-tag">LQA Taxonomy</span></div></div>
+      <div class="skill-card"><h3><i class="fas fa-bug" style="color:#2da4db;"></i> Bug Tracking & Reporting</h3><div class="skill-tags"><span class="skill-tag">Jira / Trello</span><span class="skill-tag">Reproduction Steps</span><span class="skill-tag">Screenshots & Recordings</span><span class="skill-tag">Severity Classification</span><span class="skill-tag">Error Taxonomy</span></div></div>
+      <div class="skill-card"><h3><i class="fas fa-laptop-code" style="color:#2da4db;"></i> Platforms</h3><div class="skill-tags"><span class="skill-tag">macOS</span><span class="skill-tag">iOS</span><span class="skill-tag">Android</span><span class="skill-tag">Windows</span><span class="skill-tag">Hardware UI</span></div></div>
+      <div class="skill-card"><h3><i class="fas fa-globe" style="color:#2da4db;"></i> Localisation Tools</h3><div class="skill-tags"><span class="skill-tag">Xbench / Verifika</span><span class="skill-tag">Trados Studio / memoQ</span><span class="skill-tag">Smartcat</span><span class="skill-tag">Subtitle Edit</span></div></div>
+      <div class="skill-card"><h3><i class="fas fa-robot" style="color:#2da4db;"></i> Automation & Tech</h3><div class="skill-tags"><span class="skill-tag">Python (in progress)</span><span class="skill-tag">HTML / CSS / JSON</span><span class="skill-tag">Postman (in progress)</span><span class="skill-tag">Selenium (in progress)</span></div></div>
+      <div class="skill-card"><h3><i class="fas fa-language" style="color:#2da4db;"></i> Languages</h3><div class="skill-tags"><span class="skill-tag">Portuguese BR (Native)</span><span class="skill-tag">English (C2 Fluent)</span><span class="skill-tag">French (B2)</span><span class="skill-tag">Spanish (B1)</span></div></div>
     </div>
   </div>
 </section>
@@ -1183,7 +920,7 @@ position: absolute;
       <li><i class="fas fa-check-circle relo-check"></i><div><strong>Immediately available — can start within 2-3 weeks</strong></div></li>
       <li><i class="fas fa-check-circle relo-check"></i><div><strong>Accommodation arranged</strong></div></li>
       <li><i class="fas fa-check-circle relo-check"></i><div><strong>EU Citizenship in final stages</strong></div></li>
-          </ul>
+    </ul>
   </div>
 </section>
 
@@ -1192,43 +929,25 @@ position: absolute;
 <!-- COLLABORATIONS SECTION -->
 <section class="clients-section" id="clients">
   <div class="clients-bg-slides" id="clientsBgSlides">
-
     <div class="clients-bg-slide active" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/collabs/gt-cl1.jpg?raw=true');"></div>
-
     <div class="clients-bg-slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/collabs/gt-cl11.jpg?raw=true');"></div>
-
     <div class="clients-bg-slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/collabs/gt-cl14.jpg?raw=true');"></div>
-
-<div class="clients-bg-slide active" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/collabs/gt-cl4.jpg?raw=true');"></div>
-
+    <div class="clients-bg-slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/collabs/gt-cl4.jpg?raw=true');"></div>
     <div class="clients-bg-slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/collabs/gt-cl3.jpg?raw=true');"></div>
-
     <div class="clients-bg-slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/collabs/gt-cl13.jpg?raw=true');"></div>
-
-<div class="clients-bg-slide active" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/collabs/gt-cl7.jpg?raw=true');"></div>
-
+    <div class="clients-bg-slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/collabs/gt-cl7.jpg?raw=true');"></div>
     <div class="clients-bg-slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/collabs/gt-cl5.jpg?raw=true');"></div>
-
-<div class="clients-bg-slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/collabs/gt-cl12.jpg?raw=true');"></div>
-
-<div class="clients-bg-slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/collabs/gt-cl2.jpg?raw=true');"></div>
-
-<div class="clients-bg-slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/collabs/gt-cl6.jpg?raw=true');"></div>
-
-
+    <div class="clients-bg-slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/collabs/gt-cl12.jpg?raw=true');"></div>
+    <div class="clients-bg-slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/collabs/gt-cl2.jpg?raw=true');"></div>
+    <div class="clients-bg-slide" style="background-image: url('https://github.com/alc-etimo/globetech/blob/main/imgs/collabs/gt-cl6.jpg?raw=true');"></div>
   </div>
   <div class="clients-overlay"></div>
-
-
   <div class="clients-box" id="clientsBox">
-
-    <div class="client-logo-box">
-
-<img id="clientLogoImg" src="https://github.com/alc-etimo/globetech/blob/main/imgs/logos/acclaro-logo.png?raw=true" alt="Acclaro">
-</div>
-        <div class="client-role-lbl" id="clientRoleLabel">Functional Beta Testing · Process Otimization</div>
-
+    <div class="client-logo-box"><img id="clientLogoImg" src="https://github.com/alc-etimo/globetech/blob/main/imgs/logos/acclaro-logo.png?raw=true" alt="Acclaro"></div>
+    <div class="client-role-lbl" id="clientRoleLabel">Functional Beta Testing · Process Optimization</div>
+  </div>
 </section>
+
 <!-- SOCIAL WRAPPER -->
 <div class="social-wrapper" id="contact">
   <div class="wrapper">
@@ -1245,28 +964,12 @@ position: absolute;
 <!-- FOOTER -->
 <div class="footer-wrapper">
   <div class="footer">
-    <div class="footer-logo-col">
-      <img src="https://github.com/alc-etimo/globetech/blob/main/imgs/logos/logo-ariane-globetech-footer.png?raw=true" alt="Ariane Lesnyak">
-    </div>
-    <div class="footer-links-col">
-      <ul>        
-        <li style="margin-left:50px;"><a href="#about-intro">Who I Am</a></li>
-        <li style="margin-left:50px;"><a href="#cases">Case Studies</a></li>
-        <li style="margin-left:50px;"><a href="#skills">Competencies</a></li>
-        <li style="margin-left:50px;"><a href="#clients">Collaborations</a></li>
-      </ul>
-    </div>
-    <div class="footer-address-col">
-      <h5>Étimo Edições</h5>
-      <p>59th Vicente Domingues Vaz St<br>Torre de Pedra, SP, Brazil</p>
-      <p><i class="fas fa-phone"></i> +55 (11) 9 43882913</p>
-      <p><i class="fas fa-envelope"></i> ariane.etimo@gmail.com</p>
-      <p><i class="fa-solid fa-plane-departure" style="color:#2da4db;"></i>Open to relocation</i>
-    </div>
+    <div class="footer-logo-col"><img src="https://github.com/alc-etimo/globetech/blob/main/imgs/logos/logo-ariane-globetech-footer.png?raw=true" alt="Ariane Lesnyak"></div>
+    <div class="footer-links-col"><ul><li style="margin-left:50px;"><a href="#about-intro">Who I Am</a></li><li style="margin-left:50px;"><a href="#cases">Case Studies</a></li><li style="margin-left:50px;"><a href="#skills">Competencies</a></li><li style="margin-left:50px;"><a href="#clients">Collaborations</a></li></ul></div>
+    <div class="footer-address-col"><h5>Étimo Edições</h5><p>59th Vicente Domingues Vaz St<br>Torre de Pedra, SP, Brazil</p><p><i class="fas fa-phone"></i> +55 (11) 9 43882913</p><p><i class="fas fa-envelope"></i> ariane.etimo@gmail.com</p><p><i class="fa-solid fa-plane-departure" style="color:#2da4db;"></i>Open to relocation</p></div>
   </div>
   <div class="sub-footer">© 2026 Ariane Lesnyak · Designed for the Localisation QA Engineer with Portuguese role at Cork · Inspired by GlobeTech.eu</div>
 </div>
-
 
 <script>
 // Navbar scroll effect
@@ -1285,9 +988,9 @@ const captions = [
     "Finding bugs before users do · Turning issues into engineering-ready reports",
     "Assuring quality across Portuguese variants in real-world scenarios",
     "Testing localisation where language meets product behavior",
-    "Making sure every string work   Linguistics · Performance · Cultural",    
-    "Aligning language QA and engineering teams through clear communication",    
-    "Relocation-ready · Brazil → Ireland  EU citizenship final stage"
+    "Making sure every string works · Linguistics · Performance · Cultural",
+    "Aligning language QA and engineering teams through clear communication",
+    "Relocation-ready · Brazil → Ireland · EU citizenship final stage"
 ];
 function showHeroSlide(index) { heroSlides.forEach((s, i) => s.classList.toggle('active', i === index)); const captionEl = document.querySelector('#heroCaption p'); if (captionEl && captions[index]) captionEl.innerText = captions[index]; heroIdx = index; }
 function nextHeroSlide() { showHeroSlide((heroIdx + 1) % heroSlides.length); }
@@ -1297,17 +1000,16 @@ if (heroSlides.length) heroTimer = setInterval(nextHeroSlide, 5500);
 const clientData = [
    { logo: "https://github.com/alc-etimo/globetech/blob/main/imgs/logos/acclaro-logo.png?raw=true", name: "Acclaro", role: "Functional Beta Testing · Process Optimization" },
    { logo: "https://github.com/alc-etimo/globetech/blob/main/imgs/logos/tw-logo-att.png?raw=true", name: "TeamWorker", role: "Linguistic QA Lead · Taxonomy Management" },
-    { logo: "https://github.com/alc-etimo/globetech/blob/main/imgs/logos/saga_logo.webp?raw=true", name: "Saga Translation", role: "Localisation FR>EN · Cultural Adaptation" },    
-    { logo: "https://github.com/alc-etimo/globetech/blob/main/imgs/logos/VSI_Vox_Mundi_logo.png?raw=true", name: "VOX MUNDI", role: "Localisation QA · Streaming Platforms" },
-    { logo: "https://github.com/alc-etimo/globetech/blob/main/imgs/logos/mm-logo.png?raw=true", name: "Moshi Media", role: "MTPE QA · Streaming Platforms" },
-    { logo: "https://github.com/alc-etimo/globetech/blob/main/imgs/logos/claro-logo-att.png?raw=true", name: "Claro Telecom", role: "Language Specialist · Process Optimization" },
-    { logo: "https://github.com/alc-etimo/globetech/blob/main/imgs/logos/tabuleiro-filmes.png?raw=true", name: "Tabuleiro Filmes", role: "Scripts PT-BR>EN · International Film Festivals" },
-    { logo: "https://github.com/alc-etimo/globetech/blob/main/imgs/logos/ducere-logo.png?raw=true", name: "Ducere", role: "Editor · Educational Materials" },
-    { logo: "https://github.com/alc-etimo/globetech/blob/main/imgs/logos/itc-global-logoo.png?raw=true", name: "ITC Global", role: "Subtitling · Academic Lectures" },
-    { logo: "https://github.com/alc-etimo/globetech/blob/main/imgs/logos/Iyuno-SDI-Group-Logo.png?raw=true", name: "iYUNO", role: "Translation · Term Documentation" },
-    { logo: "https://github.com/alc-etimo/globetech/blob/main/imgs/logos/tropical-dystopia-logo.png?raw=true", name: "Tropical Dystopia", role: "Localisation ES>PT-BR · Financial Granted" }
+   { logo: "https://github.com/alc-etimo/globetech/blob/main/imgs/logos/saga_logo.webp?raw=true", name: "Saga Translation", role: "Localisation FR>EN · Cultural Adaptation" },
+   { logo: "https://github.com/alc-etimo/globetech/blob/main/imgs/logos/VSI_Vox_Mundi_logo.png?raw=true", name: "VOX MUNDI", role: "Localisation QA · Streaming Platforms" },
+   { logo: "https://github.com/alc-etimo/globetech/blob/main/imgs/logos/mm-logo.png?raw=true", name: "Moshi Media", role: "MTPE QA · Streaming Platforms" },
+   { logo: "https://github.com/alc-etimo/globetech/blob/main/imgs/logos/claro-logo-att.png?raw=true", name: "Claro Telecom", role: "Language Specialist · Process Optimization" },
+   { logo: "https://github.com/alc-etimo/globetech/blob/main/imgs/logos/tabuleiro-filmes.png?raw=true", name: "Tabuleiro Filmes", role: "Scripts PT-BR>EN · International Film Festivals" },
+   { logo: "https://github.com/alc-etimo/globetech/blob/main/imgs/logos/ducere-logo.png?raw=true", name: "Ducere", role: "Editor · Educational Materials" },
+   { logo: "https://github.com/alc-etimo/globetech/blob/main/imgs/logos/itc-global-logoo.png?raw=true", name: "ITC Global", role: "Subtitling · Academic Lectures" },
+   { logo: "https://github.com/alc-etimo/globetech/blob/main/imgs/logos/Iyuno-SDI-Group-Logo.png?raw=true", name: "iYUNO", role: "Translation · Term Documentation" },
+   { logo: "https://github.com/alc-etimo/globetech/blob/main/imgs/logos/tropical-dystopia-logo.png?raw=true", name: "Tropical Dystopia", role: "Localisation ES>PT-BR · Financial Granted" }
 ];
-
 
 const clientBgSlides = document.querySelectorAll('#clientsBgSlides .clients-bg-slide');
 const clientLogoImg = document.getElementById('clientLogoImg');
@@ -1318,7 +1020,7 @@ function showClientSlide(index) { if (!clientBgSlides.length) return; clientBgSl
 function nextClientSlide() { if (clientBgSlides.length) showClientSlide((clientBgIdx + 1) % clientBgSlides.length); }
 if (clientBgSlides.length) clientBgTimer = setInterval(nextClientSlide, 5500);
 
-   /* Bug lifecycle step interactivity */
+// Bug lifecycle step interactivity
 const stepData = [
     { title: 'Test Plan Design', text: 'Designed manual test plans covering CRM content, chatbot scripts, and documentation. Defined test scope, entry/exit criteria, test cases by severity, and assigned coverage to 15+ team members.' },
     { title: 'Test Execution', text: 'Executed test cases systematically across CRM modules and chatbot interfaces, verifying functional behaviour, linguistic accuracy, and cultural appropriateness.' },
@@ -1339,7 +1041,7 @@ if (bugSteps.length && bugDetail) {
         });
     });
 }
-   
+
 // Relocation banner
 setTimeout(() => { const reloBar = document.getElementById('reloBar'); if (reloBar) reloBar.classList.add('show'); }, 2000);
 </script>
