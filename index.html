@@ -448,6 +448,42 @@ transition: transform 0.25s, box-shadow 0.25s;
 .badge-bug  { background: #FED7D7; color: #c53030; padding: 2px 8px; border-radius: 20px; font-weight: 600; font-size: 0.72rem; }
 .badge-na   { background: var(--rule); color: var(--muted); padding: 2px 8px; border-radius: 20px; font-weight: 600; font-size: 0.72rem; }
 
+   /* ── CASE 2: Interactive Bug Timeline ── */
+.bug-timeline { margin: 0 0 28px; }
+.bug-steps { display: flex; gap: 0; overflow-x: auto; margin-bottom: 0; }
+.bug-step {
+  flex: 1; min-width: 120px; padding: 16px 14px;
+  text-align: center; background: var(--off); border-right: 1px solid var(--rule);
+  cursor: pointer; transition: all 0.2s; position: relative;
+}
+.bug-step:last-child { border-right: none; }
+.bug-step.active { background: var(--navy); color: white; }
+.bug-step.active .bs-icon { color: #5bc8ff; }
+.bug-step.active .bs-label { color: rgba(255,255,255,0.9); }
+.bug-step:hover:not(.active) { background: var(--blue-lt); }
+.bs-icon { font-size: 1.3rem; margin-bottom: 6px; }
+.bs-label { font-size: 0.7rem; font-weight: 600; color: var(--navy); letter-spacing: 0.5px; }
+.bug-step.active .bs-label { color: white; }
+.bs-connector {
+  position: absolute; top: 50%; right: -1px;
+  width: 0; height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid var(--navy);
+  transform: translateY(-50%);
+  display: none; z-index: 1;
+}
+.bug-step.active .bs-connector { display: block; }
+.bug-step:last-child .bs-connector { display: none; }
+
+.bug-detail {
+  background: var(--white); border: 1px solid var(--rule);
+  padding: 22px 26px; border-top: none;
+  font-size: 0.87rem; color: var(--muted); line-height: 1.7;
+}
+.bug-detail h5 { font-size: 0.9rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+
+
 /* =========================================================
    SKILLS SECTION
    ========================================================= */
@@ -962,21 +998,85 @@ position: absolute;
 <div class="bar-fill" data-width="90"></div></div></div>
     </div></div></div>
 
-    <!-- CASE 4: Subtitle QA & Error Taxonomy -->
+     <!-- ───── CASE 4: Bug Lifecycle / Interactive Timeline ───── -->
     <div class="case-card">
-      <div class="case-header"><div><div class="case-num">Case Study 04</div><div class="case-title">Subtitle QA & Error Taxonomy for Streaming Platforms</div>
+      <div class="case-header">
+        <div>
+          <div class="case-num">Case Study 02</div>
+          <div class="case-title">End-to-End QA Testing Lifecycle: CRM & Chatbot Software<br><small style="font-weight:400;font-size:0.9rem;color:rgba(255,255,255,0.7)">TeamWorker · Major Telecom Client · 30,000+ users</small></div>
+          <div class="case-tags">
+            <span class="case-tag">QA Lifecycle</span>
+            <span class="case-tag">Test Plan Design</span>
+            <span class="case-tag">Error Taxonomy</span>
+            <span class="case-tag">QA Dashboards</span>
+          </div>
+        </div>
+        <div class="case-badge">End-to-End QA</div>
+      </div>
 
-<small style="font-weight:400;font-size:0.9rem;color:rgba(255,255,255,0.7)">Process optimization, data curation, and error taxonomy for LLMs training</small>
+      <div class="case-body">
+        <p style="margin-bottom:20px;font-size:0.87rem;color:var(--muted);">
+          Led the full QA testing lifecycle for CRM software and chatbot interfaces used by 30,000+ call centre agents. 
+          Click each phase to explore the approach:
+        </p>
+         <!-- Animated step-by-step bug lifecycle -->
+        <div class="bug-timeline">
+          <div class="bug-steps" id="bugSteps">
+            <div class="bug-step active" data-step="0">
+              <div class="bs-icon">📋</div>
+              <div class="bs-label">Test Plan</div>
+              <div class="bs-connector"></div>
+            </div>
+            <div class="bug-step" data-step="1">
+              <div class="bs-icon">🔎</div>
+              <div class="bs-label">Execution</div>
+              <div class="bs-connector"></div>
+            </div>
+            <div class="bug-step" data-step="2">
+              <div class="bs-icon">🐛</div>
+              <div class="bs-label">Bug Filing</div>
+              <div class="bs-connector"></div>
+            </div>
+            <div class="bug-step" data-step="3">
+              <div class="bs-icon">⚙️</div>
+              <div class="bs-label">Engineering</div>
+              <div class="bs-connector"></div>
+            </div>
+            <div class="bug-step" data-step="4">
+              <div class="bs-icon">✅</div>
+              <div class="bs-label">Regression</div>
+              <div class="bs-connector"></div>
+            </div>
+            <div class="bug-step" data-step="5">
+              <div class="bs-icon">📊</div>
+              <div class="bs-label">Dashboard</div>
+            </div>
+          </div>
 
-<div class="case-tags"><span class="case-tag">Error Taxonomy</span><span class="case-tag">AI Training Data</span><span class="case-tag">Data Governace</span><span class="case-tag">Subtitle QA</span></div></div><div class="case-badge">Innovation</div></div>
-      <div class="case-body"><div class="ps-row"><div class="ps-box ps-problem"><h4>❗ Challenge</h4><p>The existing subtitle Quality Assurance process used a single "feedback" column on a spreadsheet, forcing engineers to guess error types and slowing down AI model retraining.</p></div><div class="ps-box ps-solution"><h4>✅ My Approach</h4><p>Redesigned the QA workflow with a structured error taxonomy, including: grammar, syntax, missing words, hallucinations, and in-cue, out-cue timing. Created standardized templates adopted company-wise.</p></div></div><div class="ba-row"><div class="ba-box ba-before"><strong>⬅ Before</strong><ul><li>❌ Single "feedback" column</li><li>❌ Engineers guessing error type and where they were</li><li>❌ Slow AI retraining</li></ul></div><div class="ba-box ba-after"><strong>➡ After</strong><ul><li>✅ 15+ structured categories created</li><li>✅ Severy erros suggested: minor, major, and critical</li><li>✅ Faster LLM model improvement</li></ul></div></div>
+          <div class="bug-detail" id="bugDetail">
+            <h5>Test Plan Design</h5>
+            <p>Designed manual test plans covering CRM content, chatbot scripts, and documentation. Defined test scope, entry/exit criteria, test cases by severity, and assigned coverage to 15+ team members. Plans were stored in a shared repository and versioned alongside software builds.</p>
+          </div>
+        </div>
 
-
-
-<div class="metrics-wrap"><div class="metric-row"><div class="metric-head"><span>Engineering Time to Identify Issues</span><span>-70%</span></div><div class="bar-track"><div class="bar-fill" data-width="70"></div></div></div><div class="metric-row"><div class="metric-head"><span>Error Documentation Accuracy</span><span>+85%</span></div><div class="bar-track"><div class="bar-fill" data-width="85"></div></div></div><div class="metric-row"><div class="metric-head"><span>Natural Language Processing model improvement</span><span>+40%</span></div><div class="bar-track"><div class="bar-fill" data-width="40"></div></div></div></div></div>
+        <div class="metrics-wrap">
+          <div class="metric-row">
+            <div class="metric-head"><span>Rework Cycle Reduction</span><span>30%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="30"></div></div>
+          </div>
+          <div class="metric-row">
+            <div class="metric-head"><span>Team Delivery Consistency Improvement</span><span>85%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
+          </div>
+          <div class="metric-row">
+            <div class="metric-head"><span>Terminology Inconsistency Reduction</span><span>60%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="60"></div></div>
+          </div>
+        </div>
+      </div>
     </div>
 
-  </div>
+    
 </section>
 
 <!-- ====================================================
